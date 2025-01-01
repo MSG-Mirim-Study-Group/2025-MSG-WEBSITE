@@ -1,0 +1,74 @@
+/* 모두가 공통으로 import 해야하는 기초 세팅 파일 */
+
+@import url('fonts.css');
+
+:root {
+    /* 변수를 사용할 때는 var(--main-color); 이렇게 사용 */
+    --main-font: 'Pretendard';
+    --main-font-weight: 400;
+
+    --main-color-01: #59F9CD;
+    --main-color-02: #62FBB5;
+    --main-color-03: #88FFA9;
+
+    --black-color-01: #424242;
+    --gray-color-01: #757575;
+    --gray-color-02: #9E9E9E;
+    --gray-color-03: #C4C4C4;
+
+
+    --header-height: 8.43vh;
+    /* 헤더 높이 */
+    --page-height: calc(100vh - var(--header-height));
+    /* 기본 한 페이지 높이 */
+    --header-img-width: 2.3vw;
+    /* 헤더에 있는 로고 크기 */
+
+    --header-font-size: 0.9vw;
+    /*--title-font-size: 2vw;
+    --subtitle-font-size: 0.9vw;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 폰트는 전역설정 완료 */
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+}
+
+body {
+    padding-top: var(--header-height);
+}
+
+a { text-decoration-line: none; }
+a:link, a:visited, a:hover, a:active { color: black; }
+li { list-style: none; }
+
+/* header */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14.25em;
+    box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+}
+
+header .header-logo {
+    width: var(--header-img-width);
+}
+
+header .header-menu {
+    color: var(--black-color-01);
+    font-size: var(--header-font-size);
+    font-weight: 600;
+    margin-left: 80px;
+}
+
+header ul>li>a:hover {
+    color: var(--main-color-01);
+    font-weight: 700;
+}
