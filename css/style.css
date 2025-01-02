@@ -93,6 +93,9 @@ footer a {
     margin: 20px 0;
     font-size: 1.3vw;
 }
+.footer-menu a.active {
+    text-decoration: underline;
+}
 
 .footer-connect {
     font-size: 0.9vw;
@@ -111,7 +114,6 @@ footer a {
     align-items: center;
     margin: 3em 0;
 }
-
 .footer-instagram img {
     width: 2.3vw;
     margin-right: 10px;
