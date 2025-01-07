@@ -1,0 +1,127 @@
+/* 모두가 공통으로 import 해야하는 기초 세팅 파일 */
+
+@import url('fonts.css');
+
+:root {
+    /* 변수를 사용할 때는 var(--main-color); 이렇게 사용 */
+    --main-font: 'Pretendard';
+    --main-font-weight: 400;
+
+    --main-color-01: #59F9CD;
+    --main-color-02: #62FBB5;
+    --main-color-03: #88FFA9;
+
+    --black-color-01: #424242;
+    --black-color-02: #575757;
+    --gray-color-01: #757575;
+    --gray-color-02: #9E9E9E;
+    --gray-color-03: #C4C4C4;
+
+    /* 헤더 높이 */
+    --header-height: 8.43vh;
+    /* 기본 한 페이지 높이 */
+    --page-height: calc(100vh - var(--header-height));
+    
+    /* 헤더 로고 크기 */
+    --header-logo-width: 2.3vw;
+    
+    --header-font-size: 0.9vw;
+    /*--title-font-size: 2vw;
+    --subtitle-font-size: 0.9vw;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 폰트는 전역설정 완료 */
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+}
+
+body {
+    padding-top: var(--header-height);
+}
+
+a { text-decoration-line: none; }
+li { list-style: none; }
+
+/* header */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14.25em;
+    box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+}
+
+header .header-logo {
+    width: var(--header-logo-width);
+}
+
+header .header-menu {
+    color: var(--black-color-01);
+    font-size: var(--header-font-size);
+    font-weight: 600;
+    margin-left: 80px;
+}
+
+header ul>li>a:hover {
+    color: var(--main-color-01);
+    font-weight: 700;
+}
+
+/* footer */
+footer {
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--black-color-02);
+    padding: 0 14.25em;
+}
+footer a { 
+    color: #fff; 
+    font-weight: 600;
+}
+
+.footer-menu {
+    padding: 3em 0;
+}
+.footer-menu a {
+    display: block;
+    margin: 20px 0;
+    font-size: 1.3vw;
+}
+.footer-menu a.active {
+    text-decoration: underline;
+}
+
+.footer-connect {
+    font-size: 0.9vw;
+}
+.footer-connect .instagram {
+    display: inline-block;
+    margin: 5px 0 ;
+}
+.footer-connect .instagram::after {
+    content: '|';
+    padding: 0 6px 0 15px;
+}
+
+.footer-instagram {
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+}
+.footer-instagram img {
+    width: 2.3vw;
+    margin-right: 10px;
+}
+
+.footer-copyright {
+    font-size: 0.7vw;
+    text-align: center;
+    padding: 1em 0;
+    opacity: 0.87;
+}
