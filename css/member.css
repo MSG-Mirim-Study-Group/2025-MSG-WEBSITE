@@ -1,0 +1,325 @@
+/* 기본적인 여백 제거 */
+
+@import url('fonts.css');
+@import url('style.css');
+
+header {
+  font-family: 'pretandard';
+  font-weight: 600;
+  font-style: normal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateY(0);
+  background-color: white;
+}
+
+.header-menu {
+  font-family: 'Pretendard',sans-serif;
+  font-weight: 600;
+}
+
+#title{
+  font-family: 'KBO-Dia-Gothic';
+  font-weight: 500;
+}
+
+#sub{
+  font-family: 'Pretendard Variable';
+  font-weight: 600;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.section {
+  flex: 1;
+  position: relative;
+  min-height: 100%;
+  overflow: visible;
+}
+
+/* footer 설정 */
+footer {
+  flex-shrink: 0; /* footer가 줄어들지 않도록 설정 */
+  width: 100%;
+  padding: 0 14.25em;
+  margin-top: auto; /* footer를 항상 하단으로 밀어냄 */
+  transform:translateY(980%);
+}
+
+
+/* 원들 설정 */
+.deco-circles {
+  position: absolute !important;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 0.4px solid;
+  z-index: -1;
+}
+
+/* Now, You are the Next */
+#sixteen {
+  position: absolute;
+  width: 729px;
+  height: 224px;
+  left: calc(50% - 729px / 2 - 4.5px);
+  top: 5875px;
+
+  font-family: "KBO Dia Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 112px;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* 부원 */
+#title {
+  position: absolute;
+  width: 109px;
+  height: 60px;
+  left: 230px;
+  top: 331px;
+
+  font-family: "KBO Dia Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+
+  color: #424242;
+}
+
+/* 16기와 함께할 선배들이에요! <3 */
+#sub {
+  position: absolute;
+  width: 361px;
+  height: 33px;
+  left: 230px;
+  top: 415px;
+
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #9e9e9e;
+}
+
+/* 14기 */
+#fourteen {
+  position: absolute;
+  width: 71px;
+  height: 43px;
+  left: 230px;
+  top: 480px;
+
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #757575;
+}
+
+/* 15기 */
+#fifteen {
+  position: absolute;
+  width: 70px;
+  height: 43px;
+  left: 230px;
+  top: 2981.76px;
+
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #757575;
+}
+
+/* 각 원들의 위치와 크기 */
+.deco-circles-01 {
+  width: 1057px;
+  height: 1057px;
+  left: 172px;
+  top: 891px;
+  border-color: #59f9cd;
+}
+
+.deco-circles-02 {
+  width: 1641px;
+  height: 1641px;
+  left: -120px;
+  top: 613px;
+  border-color: #59f9cd;
+}
+
+.deco-circles-03 {
+  width: 1057px;
+  height: 1057px;
+  left: 871px;
+  top: 1840px;
+  border-color: #1bf48b;
+}
+
+.deco-circles-04 {
+  width: 1641px;
+  height: 1641px;
+  left: 579px;
+  top: 1548px;
+  border-color: #1bf48b;
+}
+
+.deco-circles-05 {
+  width: 1057px;
+  height: 1057px;
+  left: 400px;
+  top: 3062px;
+  border-color: #59f9cd;
+  transform: scaleX(-1);
+  /* 수평 반전 */
+}
+
+.deco-circles-06 {
+  width: 1641px;
+  height: 1641px;
+  left: 100px;
+  top: 2770px;
+  border-color: #59f9cd;
+  transform: scaleX(-1);
+  /* 수평 반전 */
+}
+
+.deco-circles-07 {
+  width: 1057px;
+  height: 1057px;
+  left: 30px;
+  top: 4154px;
+  border-color: #1bf48b;
+  transform: scaleX(-1);
+  /* 수평 반전 */
+}
+
+.deco-circles-08 {
+  width: 1641px;
+  height: 1641px;
+  left: -270px;
+  top: 3862px;
+  border-color: #1bf48b;
+  transform: scaleX(-1);
+  /* 수평 반전 */
+}
+
+.member{
+position: relative;
+width: 100%;
+height: 425.21px;
+
+}
+
+
+/*지현*/
+.member1{
+  position: absolute;
+  left: 10vw;
+  top: 80vh;
+}
+
+/*혜원*/
+.member2{
+  position: absolute;
+  left: 48vw;
+  top: 150vh;
+}
+
+/*하영*/
+.member3{
+  position: absolute;
+  left: 10vw;
+  top: 200vh;
+}
+
+/*수빈*/
+.member4{
+  position: absolute;
+  left: 58vw;
+  top: 265vh;
+}
+
+/*경민*/
+.member5{
+  position: absolute;
+  left: 15vw;
+  top: 340vh;
+}
+
+/*태연*/
+.member6{
+  position: absolute;
+  left: 50vw;
+  top: 415vh;
+}
+
+/*수현*/
+.member7{
+  position: absolute;
+  left: 8vw;
+  top: 490vh;
+}
+
+/*상연*/
+.member8{
+  position: absolute;
+  left: 55vw;
+  top: 535vh;
+}
+
+/*다경*/
+.member9{
+  position: absolute;
+  left: 9vw;
+  top: 600vh;
+}
+
+/*시후*/
+.member10{
+  position: absolute;
+  left: 50vw;
+  top: 680vh;
+}
+
+/*신입생*/
+.member11{
+  position: absolute;
+  left: 30vw;
+  top: 740vh;
+}
