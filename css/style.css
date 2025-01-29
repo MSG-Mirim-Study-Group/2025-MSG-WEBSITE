@@ -28,6 +28,9 @@
     --header-font-size: 0.9vw;
     /*--title-font-size: 2vw;
     --subtitle-font-size: 0.9vw;*/
+
+    /* 기본 패딩 크기 */
+    --basic-padding: 14.25em;
 }
 
 * {
@@ -53,8 +56,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 14.25em;
+    padding: 0 var(--basic-padding);
+    background-color: #fff;
     box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+    z-index: 1;
 }
 
 header .header-logo {
@@ -78,7 +83,7 @@ footer {
     color: #fff;
     font-weight: 600;
     background-color: var(--black-color-02);
-    padding: 0 14.25em;
+    padding: 0 var(--basic-padding);
 }
 footer a { 
     color: #fff; 

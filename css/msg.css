@@ -1,0 +1,69 @@
+.main {
+    padding: 0 var(--basic-padding);
+}
+
+.content-banner {
+    height: var(--page-height); 
+    margin: 0 calc(-1 * var(--basic-padding));  /* padding 만큼 빼기 */
+    background-image: url(../image/msg/banner-background.png);
+    background-size: cover;
+}
+.banner-img {
+    position: absolute;
+    width: 70%;
+    top: 2vh;
+    right: 11vw;
+    z-index: 0;
+}
+
+
+.content-about {
+    margin: 40vh 0;
+}
+.content-about h1, h2, h3 {
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 500;
+    color: var(--black-color-01);
+}
+.arrow {
+    width: 7vw;
+}
+
+.content-slogan {
+    text-align: center;
+}
+.content-slogan h3 {
+    font-size: 2vw;
+}
+.content-slogan h1 {
+    font-size: 4vw;
+}
+.logo-deco {
+    width: 100%;
+}
+.slogan {
+    width: 100%;
+}
+
+.content-passion {
+
+}
+.content-passion h2 {
+    font-size: 2vw;
+}
+.content-desc {
+
+}
+.content-desc p {
+    font-size: 1vw;
+    color: var(--gray-color-02);
+}
+.circle {
+
+}
+.sub-title {
+
+}
+.title {
+
+}
