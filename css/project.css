@@ -1,0 +1,142 @@
+.main {
+    margin-top: 16.6vh;
+    margin-bottom: 16.6vh;
+}
+
+.project-title {
+    padding-left: 14.8438vw;
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 500;
+    font-size: 2.6vw;
+    color: var(--black-color-01);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 9.5vh;
+    margin-bottom: 25vh;
+}
+
+.swiper-wrapper {
+    margin-bottom: 7vh;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 49.4vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.swiper-slide-active .swiper-content {
+    margin-top: 10px;
+    font-family: 'Pretendard';
+    position: relative;
+    bottom: 2px; 
+    left: 10px;    
+}
+
+.swiper-slide:not(.swiper-slide-active) .swiper-content {
+    position: absolute;
+    top: -57px; 
+    right: 10px;
+    text-align: right;
+}
+
+.swiper-slide:not(.swiper-slide-active) .slide-content {
+    display: none;
+}
+
+.slide-grade {
+    color: var(--gray-color-01);
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.slide-title {
+    color: var(--black-color-01);
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+.slide-content{
+    color: var(--black-color-01);
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: var(--main-color-03);
+    margin: 0 10px;
+  }
+
+.swiper-button-prev, .swiper-button-next  {
+    display: none !important;
+}
+
+/* 커스텀 버튼 스타일 */
+.custom-button-prev, .custom-button-next {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    width: 80px; /* 버튼 크기 조절 */
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.custom-button-prev {
+    left: 27%; /* 왼쪽 위치 조절 */
+}
+
+.custom-button-next {
+    right: 27%; /* 오른쪽 위치 조절 */
+}
+
+.custom-button-prev img, .custom-button-next img {
+    width: 100%;
+    height: 100%;
+}
+
+.award-container {
+    margin: 40px auto; /* 중앙 정렬 */
+    padding-left: 14.8438vw; /* 왼쪽 패딩 */
+    padding-right: 14.8438vw;
+}
+
+.reward-title {
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 500;
+    font-size: 2.6vw;
+    color: var(--black-color-01);
+}
+.reward-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Pretendard";
+}
+
+.reward-list th, .reward-list td {
+    padding: 4vh;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reward-list th {
+    font-size: 1vw;
+    font-weight: 600;
+    color: #BDBDBD;
+}
+
+.reward-list td a {
+    text-decoration: none;
+    font-weight: bold;
+}
