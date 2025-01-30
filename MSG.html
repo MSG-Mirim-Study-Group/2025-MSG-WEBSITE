@@ -23,7 +23,12 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header>    
+
+    <div class="floating">
+        <img src="./image/logo.svg" alt="logo" class="floating-logo">
+        <p>지원하러 가기</p>
+    </div>
 
     <main class="main">
         <div class="content-banner">
@@ -38,32 +43,34 @@
                 <h3>WHAT IS MSG ?</h3>
                 <img src="./image/msg/content-slogan.svg" alt="slogan" class="slogan">
             </div>
+            <div class="content-desc">
+                <h2>성장 의지를 가진 사람들이 모여<br>만들어내는 시너지의 힘을 느껴보세요.</h2>
+                <p>온전히 나와 팀의 성장을 위해 노력해본 경험이 있나요?<br>
+                    MSG는 열정적인 프로젝트 활동을 통해 서로를 독려하며<br>
+                    성장과 변화를 만들어가는 동아리입니다.</p> 
+            </div>
             <div class="content-passion">
-                <div class="content-desc">
-                    <h2>성장 의지를 가진 사람들이 모여<br>만들어내는 시너지의 힘을 느껴보세요.</h2>
-                    <p>온전히 나와 팀의 성장을 위해 노력해본 경험이 있나요?<br>
-                       MSG는 열정적인 프로젝트 활동을 통해 서로를 독려하며<br>
-                       성장과 변화를 만들어가는 동아리입니다.</p> 
-                </div>
                 <h2>숫자가 증명하는 MSG의 열정</h2>
-                <div class="circle">
+                <div class="group">
+                    <div class="circle">
                         <p class="sub-title">운영기간</p>
                         <div class="title">
-                        <p class="num counting" id="years">0</p>
-                        년
+                            <span class="num counting" id="years">0</span>년
+                        </div>
                     </div>
                     <div class="circle">
                         <p class="sub-title">2024년 모임 횟수</p>
                         <div class="title">
-                        <p class="num counting" id="meetings">0</p>
-                        일
+                            <span class="num counting" id="meetings">0</span>일
+                        </div>
                     </div>
                     <div class="circle">
                         <p class="sub-title">누적 개발 블로그</p>
                         <div class="title">
-                        <p class="num counting" id="blogs">0</p>
-                        +
+                            <span class="num counting" id="blogs">0</span>+
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </main>
@@ -93,5 +100,8 @@
             COPYRIGHT ⓒ MSG. ALL RIGHTS RESERVED
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/msg.js"></script>
 </body>
 </html>
