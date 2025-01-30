@@ -1,0 +1,95 @@
+.main {
+    min-height: 100vh;
+    padding: 0 var(--basic-padding);
+}
+
+.content-banner {
+    height: var(--page-height); 
+    margin: 0 calc(-1 * var(--basic-padding));  /* padding 만큼 빼기 */
+    background-image: url(../image/msg/banner-background.png);
+    background-size: cover;
+}
+.banner-img {
+    position: absolute;
+    width: 70%;
+    top: 2vh;
+    right: 11vw;
+    z-index: 0;
+}
+
+
+.content-about {
+    margin: 30vh 0;
+}
+.content-about h1, h2, h3 {
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 500;
+    color: var(--black-color-02);
+}
+.content-about h2, h3 {
+    font-size: 2vw;
+    margin: 2vh 0;
+}
+.arrow {
+    position: relative;
+    width: 7vw;
+    left: 45vw;
+}
+
+.content-slogan {
+    text-align: center;
+}
+.content-slogan h1 {
+    font-size: 4vw;
+    margin: 5vh 0;
+}
+.logo-deco {
+    width: 90%;
+    margin-bottom: 15vh;
+}
+.slogan {
+    width: 100%;
+    margin: 8vh 0;
+}
+
+.content-desc {
+    margin: 10vh 0;
+}
+.content-desc p {
+    font-size: 1vw;
+    color: var(--gray-color-02);
+    margin: 3vh 0;
+}
+
+.content-passion {
+    margin-top: 19vh;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+.circle {
+    border: 2px solid var(--main-color-01);
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.group :hover {
+    background-color: var(--main-color-01);
+}
+.sub-title {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--gray-color-01);
+}
+.title, .num {
+    font-size: 4vw;
+    font-weight: 600;
+    color: var(--black-color-01);
+}
