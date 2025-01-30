@@ -1,10 +1,9 @@
 /* 기본적인 여백 제거 */
-
 @import url('fonts.css');
 @import url('style.css');
 
 header {
-  font-family: 'pretandard';
+  font-family: 'Pretendard';
   font-weight: 600;
   font-style: normal;
   position: fixed;
@@ -15,98 +14,15 @@ header {
   background-color: white;
 }
 
-.header-menu {
-  font-family: 'Pretendard',sans-serif;
-  font-weight: 600;
-}
-
-#title{
-  font-family: 'KBO-Dia-Gothic';
-  font-weight: 500;
-}
-
-#sub{
-  font-family: 'Pretendard Variable';
-  font-weight: 600;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  background-color: white;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-height: 100vh;
-}
-
-.section {
-  flex: 1;
-  position: relative;
-  min-height: 100%;
-  overflow: visible;
-}
-
-/* footer 설정 */
-footer {
-  flex-shrink: 0; /* footer가 줄어들지 않도록 설정 */
-  width: 100%;
-  padding: 0 14.25em;
-  margin-top: auto; /* footer를 항상 하단으로 밀어냄 */
-  transform:translateY(980%);
-}
-
-
-/* 원들 설정 */
-.deco-circles {
-  position: absolute !important;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 0.4px solid;
-  z-index: -1;
-}
-
-/* Now, You are the Next */
-#sixteen {
-  position: absolute;
-  width: 729px;
-  height: 224px;
-  left: calc(50% - 729px / 2 - 4.5px);
-  top: 5875px;
-
-  font-family: "KBO Dia Gothic";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 80px;
-  line-height: 112px;
-  text-align: center;
-
-  color: #000000;
-}
-
 /* 부원 */
 #title {
   position: absolute;
   width: 109px;
   height: 60px;
   left: 230px;
-  top: 331px;
+  top: 250px;
 
-  font-family: "KBO Dia Gothic";
+  font-family: "KBO-Dia-Gothic";
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
@@ -121,9 +37,9 @@ footer {
   width: 361px;
   height: 33px;
   left: 230px;
-  top: 415px;
+  top: 345px;
 
-  font-family: "Pretendard Variable";
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -138,9 +54,9 @@ footer {
   width: 71px;
   height: 43px;
   left: 230px;
-  top: 480px;
+  top: 410px;
 
-  font-family: "Pretendard Variable";
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -155,9 +71,9 @@ footer {
   width: 70px;
   height: 43px;
   left: 230px;
-  top: 2981.76px;
+  top: 2910px;
 
-  font-family: "Pretendard Variable";
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -166,12 +82,80 @@ footer {
   color: #757575;
 }
 
-/* 각 원들의 위치와 크기 */
+/* Now, You are the Next */
+#sixteen {
+  position: absolute;
+  width: 729px;
+  height: 224px;
+  left: calc(50% - 729px / 2 - 4.5px);
+  top: 5805px;
+
+  font-family: "KBO-Dia-Gothic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 112px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.header-menu {
+  font-family: 'Pretendard';
+  font-weight: 600;
+}
+
+#title {
+  font-family: 'KBO-Dia-Gothic';
+  font-weight: 500;
+}
+
+#sub {
+  font-family: 'Pretendard';
+  font-weight: 600;
+}
+
+body,
+html {
+  font-family: 'Pretendard';
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section,
+.wrapper {
+  flex: 1;
+  min-height: 100%;
+  overflow: visible; /* 원들이 잘리지 않도록 설정 */
+}
+
+footer {
+  font-family: 'Pretendard';
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0 14.25em;
+  margin-top: auto; /* footer를 항상 하단으로 밀어냄 */
+  transform: translateY(980%);
+}
+
+/* 원들 설정 */
+.deco-circles {
+  position: absolute !important;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 0.4px solid;
+  z-index: -1; /* 배경에 위치하도록 설정 */
+}
+
+/* 원들의 크기와 색상 설정 */
 .deco-circles-01 {
   width: 1057px;
   height: 1057px;
   left: 172px;
-  top: 891px;
+  top: 790px;
   border-color: #59f9cd;
 }
 
@@ -179,7 +163,7 @@ footer {
   width: 1641px;
   height: 1641px;
   left: -120px;
-  top: 613px;
+  top: 510px;
   border-color: #59f9cd;
 }
 
@@ -187,7 +171,7 @@ footer {
   width: 1057px;
   height: 1057px;
   left: 871px;
-  top: 1840px;
+  top: 1740px;
   border-color: #1bf48b;
 }
 
@@ -195,7 +179,7 @@ footer {
   width: 1641px;
   height: 1641px;
   left: 579px;
-  top: 1548px;
+  top: 1450px;
   border-color: #1bf48b;
 }
 
@@ -203,123 +187,115 @@ footer {
   width: 1057px;
   height: 1057px;
   left: 400px;
-  top: 3062px;
+  top: 2940px;
   border-color: #59f9cd;
-  transform: scaleX(-1);
-  /* 수평 반전 */
+  transform: scaleX(-1); /* 수평 반전 */
 }
 
 .deco-circles-06 {
   width: 1641px;
   height: 1641px;
   left: 100px;
-  top: 2770px;
+  top: 2650px;
   border-color: #59f9cd;
-  transform: scaleX(-1);
-  /* 수평 반전 */
+  transform: scaleX(-1); /* 수평 반전 */
 }
 
 .deco-circles-07 {
   width: 1057px;
   height: 1057px;
   left: 30px;
-  top: 4154px;
+  top: 4210px;
   border-color: #1bf48b;
-  transform: scaleX(-1);
-  /* 수평 반전 */
+  transform: scaleX(-1); /* 수평 반전 */
 }
 
 .deco-circles-08 {
   width: 1641px;
   height: 1641px;
   left: -270px;
-  top: 3862px;
+  top: 3920px;
   border-color: #1bf48b;
-  transform: scaleX(-1);
-  /* 수평 반전 */
+  transform: scaleX(-1); /* 수평 반전 */
 }
 
-.member{
-position: relative;
-width: 100%;
-height: 425.21px;
-
+/* 멤버들 설정 */
+.member {
+  position: relative;
+  width: 100%;
+  height: 425.21px;
+  z-index: 2; /* 원들보다 위에 위치하도록 설정 */
 }
 
+.member1 { position: absolute; left: 10vw; top: 71vh;  }
+.member2 { position: absolute; left: 48vw; top: 141vh; }
+.member3 { position: absolute; left: 10vw; top: 191vh; }
+.member4 { position: absolute; left: 58vw; top: 256vh; }
+.member5 { position: absolute; left: 15vw; top: 331vh; }
+.member6 { position: absolute; left: 50vw; top: 406vh; }
+.member7 { position: absolute; left: 8vw; top: 481vh;  }
+.member8 { position: absolute; left: 55vw; top: 526vh; }
+.member9 { position: absolute; left: 9vw; top: 591vh;  }
+.member10 { position: absolute; left: 50vw; top: 671vh;}
+.member11 { position: absolute; left: 30vw; top: 731vh;}
 
-/*지현*/
-.member1{
+/* 텍스트 설정 */
+.memberText {
   position: absolute;
-  left: 10vw;
-  top: 80vh;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 3;
 }
 
-/*혜원*/
-.member2{
+/* 멤버 텍스트 위치 */
+.memberT1 { width: 251.94px; height: 143.4px; left: 320px; top: 750px; font-size: 32px; line-height: 48px; }
+.memberT2 { width: 322.36px; height: 209.5px; left: 960px; top: 1055px; }
+.memberT3 { width: 408.42px; height: 196px; left: 290px; top: 1600px; }
+.memberT4 { width: 350px; height: 96px; left: 950px; top: 2130px; font-size: 32px; line-height: 48px; }
+.memberT5 { width: 300px; height: 101px; left: 485px; top: 2500px; font-weight: 600; font-size: 36px; line-height: 50px; }
+.memberT6 { width: 340px; height: 101px; left: 940px; top: 3220px; font-weight: 600; font-size: 36px; line-height: 50px; }
+.memberT7 { width: 419px; height: 196px; left: 260px; top: 3545px; }
+.memberT8 { width: 329px; height: 96px; left: 985px; top: 4095px; font-size: 32px; line-height: 48px; }
+.memberT9 { width: 484px; height: 196px; left: 175px; top: 4520px; }
+.memberT10 { width: 340px; height: 144px; left: 1000px; top: 4955px; font-size: 32px; line-height: 48px; }
+
+/* 멤버 이름 텍스트 설정 */
+.membername {
   position: absolute;
-  left: 48vw;
-  top: 150vh;
+  width: 103.81px;
+  height: 64.88px;
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #757575;
 }
 
-/*하영*/
-.member3{
-  position: absolute;
-  left: 10vw;
-  top: 200vh;
+.memberN1 { top: 580px; left: 460px;  }
+.memberN2 { top: 1083px; left: 750px; } 
+.memberN3 { top: 1465px; left: 445px; } 
+.memberN4 { top: 1940px; left: 1025px;} 
+.memberN5 { top: 2455px; left: 235px; } 
+.memberN6 { top: 3030px; left: 990px; }
+.memberN7 { top: 3710px; left: 740px; }
+.memberN8 { top: 3910px; left: 1045px;}
+.memberN9 { top: 4385px; left: 350px; }
+.memberN10 { top: 5095px; left: 780px;}
+.memberN11 { top: 5387px; left: 498px;}
+
+/* 강조 텍스트 */
+.highlight {
+  font-size: 36px;
+  line-height: 50.4px;
 }
 
-/*수빈*/
-.member4{
-  position: absolute;
-  left: 58vw;
-  top: 265vh;
-}
-
-/*경민*/
-.member5{
-  position: absolute;
-  left: 15vw;
-  top: 340vh;
-}
-
-/*태연*/
-.member6{
-  position: absolute;
-  left: 50vw;
-  top: 415vh;
-}
-
-/*수현*/
-.member7{
-  position: absolute;
-  left: 8vw;
-  top: 490vh;
-}
-
-/*상연*/
-.member8{
-  position: absolute;
-  left: 55vw;
-  top: 535vh;
-}
-
-/*다경*/
-.member9{
-  position: absolute;
-  left: 9vw;
-  top: 600vh;
-}
-
-/*시후*/
-.member10{
-  position: absolute;
-  left: 50vw;
-  top: 680vh;
-}
-
-/*신입생*/
-.member11{
-  position: absolute;
-  left: 30vw;
-  top: 740vh;
+/* 기타 기본 스타일 */
+.name {
+  font-size: 32px;
+  line-height: 38px;
 }
