@@ -55,6 +55,7 @@ header {
     justify-content: space-between;
     padding: 0 14.25em;
     box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+    font-family: 'Pretendard';
 }
 
 header .header-logo {
