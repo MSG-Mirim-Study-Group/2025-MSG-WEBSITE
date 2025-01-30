@@ -137,7 +137,7 @@ footer {
   flex-shrink: 0;
   width: 100%;
   padding: 0 14.25em;
-  margin-top: auto; /* footer를 항상 하단으로 밀어냄 */
+  margin-top: auto;
   transform: translateY(980%);
 }
 
@@ -147,7 +147,7 @@ footer {
   border-radius: 50%;
   box-sizing: border-box;
   border: 0.4px solid;
-  z-index: -1; /* 배경에 위치하도록 설정 */
+  z-index: -1;
 }
 
 /* 원들의 크기와 색상 설정 */
@@ -189,7 +189,7 @@ footer {
   left: 400px;
   top: 2940px;
   border-color: #59f9cd;
-  transform: scaleX(-1); /* 수평 반전 */
+  transform: scaleX(-1);
 }
 
 .deco-circles-06 {
@@ -198,7 +198,7 @@ footer {
   left: 100px;
   top: 2650px;
   border-color: #59f9cd;
-  transform: scaleX(-1); /* 수평 반전 */
+  transform: scaleX(-1);
 }
 
 .deco-circles-07 {
@@ -207,7 +207,7 @@ footer {
   left: 30px;
   top: 4210px;
   border-color: #1bf48b;
-  transform: scaleX(-1); /* 수평 반전 */
+  transform: scaleX(-1);
 }
 
 .deco-circles-08 {
@@ -216,7 +216,7 @@ footer {
   left: -270px;
   top: 3920px;
   border-color: #1bf48b;
-  transform: scaleX(-1); /* 수평 반전 */
+  transform: scaleX(-1);
 }
 
 /* 멤버들 설정 */
@@ -224,7 +224,7 @@ footer {
   position: relative;
   width: 100%;
   height: 425.21px;
-  z-index: 2; /* 원들보다 위에 위치하도록 설정 */
+  z-index: 2;
 }
 
 .member1 { position: absolute; left: 10vw; top: 71vh;  }
@@ -298,4 +298,7 @@ footer {
 .name {
   font-size: 32px;
   line-height: 38px;
+}
+.thenext{
+  color: #59f9cd;
 }
