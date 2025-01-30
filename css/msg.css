@@ -1,4 +1,5 @@
-.main { 
+.main {
+    min-height: 100vh;
     padding: 0 var(--basic-padding);
 }
 
@@ -18,52 +19,77 @@
 
 
 .content-about {
-    margin: 40vh 0;
+    margin: 30vh 0;
 }
 .content-about h1, h2, h3 {
     font-family: 'KBO-Dia-Gothic';
     font-weight: 500;
-    color: var(--black-color-01);
+    color: var(--black-color-02);
+}
+.content-about h2, h3 {
+    font-size: 2vw;
+    margin: 2vh 0;
 }
 .arrow {
+    position: relative;
     width: 7vw;
+    left: 45vw;
 }
 
 .content-slogan {
     text-align: center;
 }
-.content-slogan h3 {
-    font-size: 2vw;
-}
 .content-slogan h1 {
     font-size: 4vw;
+    margin: 5vh 0;
 }
 .logo-deco {
-    width: 100%;
+    width: 90%;
+    margin-bottom: 15vh;
 }
 .slogan {
     width: 100%;
+    margin: 8vh 0;
 }
 
-.content-passion {
-
-}
-.content-passion h2 {
-    font-size: 2vw;
-}
 .content-desc {
-
+    margin: 10vh 0;
 }
 .content-desc p {
     font-size: 1vw;
     color: var(--gray-color-02);
+    margin: 3vh 0;
+}
+
+.content-passion {
+    margin-top: 19vh;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
 }
 .circle {
-
+    border: 2px solid var(--main-color-01);
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.group :hover {
+    background-color: var(--main-color-01);
 }
 .sub-title {
-
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--gray-color-01);
 }
-.title {
-
+.title, .num {
+    font-size: 4vw;
+    font-weight: 600;
+    color: var(--black-color-01);
 }
