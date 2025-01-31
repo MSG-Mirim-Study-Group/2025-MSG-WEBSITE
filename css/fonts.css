@@ -9,7 +9,7 @@ body {
 /* Light 폰트 (300 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    src: url('../font/Pretendard-Light.otf') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -17,7 +17,7 @@ body {
 /* Regular 폰트 (400 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    src: url('../font/Pretendard-Regular.otf') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -25,7 +25,7 @@ body {
 /* Medium 폰트 (500 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    src: url('../font/Pretendard-Medium.otf') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -33,7 +33,7 @@ body {
 /* Semibold 폰트 (600 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Semibold.woff') format('woff');
+    src: url('../font/Pretendard-SemiBold.otf') format('woff');
     font-weight: 600;
     font-style: normal;
 }
@@ -41,7 +41,7 @@ body {
 /* Bold 폰트 (700 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    src: url('../font/Pretendard-Bold.otf') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -49,7 +49,7 @@ body {
 /* ExtraBold 폰트 (800 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    src: url('../font/Pretendard-ExtraBold.otf') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -57,7 +57,7 @@ body {
 /* Black 폰트 (900 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    src: url('../font/Pretendard-Black.otf') format('woff');
     font-weight: 900;
     font-style: normal;
 }
