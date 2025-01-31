@@ -35,7 +35,7 @@ header {
   top: 345px;
 
   font-family: "Pretendard";
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
   line-height: 33px;
 
@@ -82,7 +82,7 @@ header {
   left: calc(50% - 729px / 2 - 4.5px);
   top: 5805px;
 
-  font-family: "KBO-Dia-Gothic";
+  font-family: 'KBO-Dia-Gothic';
   font-weight: 500;
   font-size: 80px;
   line-height: 112px;
@@ -92,16 +92,6 @@ header {
 }
 
 .header-menu {
-  font-family: 'Pretendard';
-  font-weight: 600;
-}
-
-#title {
-  font-family: 'KBO-Dia-Gothic';
-  font-weight: 500;
-}
-
-#sub {
   font-family: 'Pretendard';
   font-weight: 600;
 }
@@ -289,7 +279,7 @@ footer {
 .memberText {
   position: absolute;
   font-family: 'Pretendard';
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 39px;
   color: #FFFFFF;
@@ -459,6 +449,7 @@ footer {
 .name {
   font-size: 32px;
   line-height: 38px;
+  font-weight: 500;
 }
 
 .thenext {
