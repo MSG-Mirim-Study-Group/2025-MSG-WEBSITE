@@ -1,2 +1,0 @@
-# 2025-MSG-WEBSITE
-2025 &lt;MSG> : MSG 공식 홈페이지
