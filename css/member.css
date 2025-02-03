@@ -1,19 +1,8 @@
-/* 기본적인 여백 제거 */
-header {
-  font-family: 'Pretendard';
-  font-weight: 600;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  transform: translateY(0);
-  background-color: white;
-}
 
 /* 부원 */
-#title {
+#title p{
   position: absolute;
-  width: 109px;
+  width: 150px;
   height: 60px;
   left: 230px;
   top: 250px;
@@ -27,15 +16,15 @@ header {
 }
 
 /* 16기와 함께할 선배들이에요! <3 */
-#sub {
+#sub p{
   position: absolute;
-  width: 361px;
+  width: 400px;
   height: 33px;
   left: 230px;
   top: 345px;
 
   font-family: "Pretendard";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 28px;
   line-height: 33px;
 
@@ -43,7 +32,7 @@ header {
 }
 
 /* 14기 */
-#fourteen {
+#fourteen p{
   position: absolute;
   width: 71px;
   height: 43px;
@@ -59,7 +48,7 @@ header {
 }
 
 /* 15기 */
-#fifteen {
+#fifteen p{
   position: absolute;
   width: 70px;
   height: 43px;
@@ -75,8 +64,8 @@ header {
 }
 
 /* Now, You are the Next */
-#sixteen {
-  position: absolute;
+#sixteen p{
+  position: relative;
   width: 729px;
   height: 224px;
   left: calc(50% - 729px / 2 - 4.5px);
@@ -91,9 +80,13 @@ header {
   color: #000000;
 }
 
-.header-menu {
+footer {
   font-family: 'Pretendard';
-  font-weight: 600;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0 14.25em;
+  margin-top: auto;
+  transform: translateY(980%);
 }
 
 body,
@@ -112,15 +105,6 @@ section,
   min-height: 100%;
   overflow: visible;
   /* 원들이 잘리지 않도록 설정 */
-}
-
-footer {
-  font-family: 'Pretendard';
-  flex-shrink: 0;
-  width: 100%;
-  padding: 0 14.25em;
-  margin-top: auto;
-  transform: translateY(980%);
 }
 
 /* 원들 설정 */
@@ -287,6 +271,11 @@ footer {
   z-index: 3;
 }
 
+.memberText p{
+  font-family: 'Pretendard';
+  font-weight: 600;
+}
+
 /* 멤버 텍스트 위치 */
 .memberT1 {
   width: 251.94px;
@@ -375,13 +364,18 @@ footer {
 /* 멤버 이름 텍스트 설정 */
 .membername {
   position: absolute;
-  width: 103.81px;
+  width: 150px;
   height: 64.88px;
   font-family: 'Pretendard';
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: #757575;
+}
+
+.membername p{
+  font-family: 'Pretendard';
+  font-weight: 600;
 }
 
 .memberN1 {
@@ -445,10 +439,21 @@ footer {
   line-height: 50.4px;
 }
 
+.highlight{
+  font-family: 'Pretendard';
+  font-weight: 600;
+}
+
 /* 기타 기본 스타일 */
 .name {
   font-size: 32px;
   line-height: 38px;
+  font-weight: 600;
+}
+
+.major{
+  font-size: 20px;
+  line-height: 28px;
   font-weight: 500;
 }
 
