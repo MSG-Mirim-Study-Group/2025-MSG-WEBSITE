@@ -28,6 +28,9 @@
     --header-font-size: 0.9vw;
     /*--title-font-size: 2vw;
     --subtitle-font-size: 0.9vw;*/
+
+    /* 기본 패딩 크기 */
+    --basic-padding: 14.25em;
 }
 
 * {
@@ -39,6 +42,7 @@
 }
 
 body {
+    min-height: 100vh;
     padding-top: var(--header-height);
 }
 
@@ -53,8 +57,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 14.25em;
+    padding: 0 var(--basic-padding);
+    background-color: #fff;
     box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+    z-index: 10;
+    font-family: 'Pretendard';
 }
 
 header .header-logo {
@@ -78,7 +85,7 @@ footer {
     color: #fff;
     font-weight: 600;
     background-color: var(--black-color-02);
-    padding: 0 14.25em;
+    padding: 0 var(--basic-padding);
 }
 footer a { 
     color: #fff; 
@@ -124,4 +131,28 @@ footer a {
     text-align: center;
     padding: 1em 0;
     opacity: 0.87;
+}
+
+/* floating button */
+.floating {
+    position: fixed;
+    top: 20vh;  right: 5%;
+    width: 8vw;   height: 8vh;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+    background-color: rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 2; 
+}
+.floating-logo {
+    width: 20%;
+}
+.floating p {
+    color: var(--main-color-01);
+    font-weight: 500;
 }

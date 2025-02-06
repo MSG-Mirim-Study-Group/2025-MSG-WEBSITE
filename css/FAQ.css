@@ -1,0 +1,304 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* 가로 스크롤 방지 */
+    color: #424242;
+}
+
+
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 40px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    box-shadow: 1px 1px 4px #75757514;
+    position: relative;
+}
+
+
+.logo {
+    margin-right: 100px;
+    position: absolute;
+    left: 200px;
+    top: 55%;
+    transform: translateY(-50%);
+    /* 로고를 세로 정렬 */
+}
+
+.nav {
+    display: flex;
+    margin-left: auto;
+    /* 네비게이션을 오른쪽 끝으로 이동 */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 22px 285px 10px 286px;
+    gap: 60px;
+    opacity: 0px
+}
+
+.nav-list a {
+    size: 20px;
+    gap: 0px;
+    /*justify: space-between;*/
+    opacity: 0px;
+    text-decoration: none;
+    color: #424242;
+    font-family: Pretendard Variable;
+    font-weight: 600;
+    line-height: 23.87px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.nav-list li a.highlight {
+    color: #59F9CD;
+    /* 강조된 글씨 색상 */
+    font-weight: bold;
+}
+
+
+/* 메인 */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div>h1 {
+    color: #424242;
+    width: 1189px;
+    height: 76px;
+    top: 199px;
+    left: 286px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    /* 아래쪽 간격 조정 */
+    margin-left: 70px;
+    font-family: Pretendard;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 76.38px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    text-decoration-color: #BDBDBD;
+    width: 89%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    background-color: #EEEEEE;
+    border: none;
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+}
+
+.faq-question span {
+    color: #757575;
+    word-spacing: 5px;
+}
+
+.faq-answer {
+    width: 86.60%;
+    margin: 0 auto;
+    font-size: 16px;
+    background: #EEEEEE;
+    padding: 20px 15px;
+    margin-top: -25px;
+    justify-content: center;
+    line-height: 30px;
+    border-radius: 16px;
+    display: none;
+    /* 기본적으로 숨김 */
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-answer-A>p {
+    color: #757575;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.faq-answer>p {
+    color: #424242;
+    text-align: left;
+    margin-top: -48px;
+    margin-left: 70px;
+}
+
+.faq-answer span {
+    font-family: Pretendard Variable;
+    color: #1BF48B;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.faq-question-last {
+    text-decoration-color: #BDBDBD;
+    width: 89%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    background-color: #EEEEEE;
+    border: none;
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    margin-bottom: 500px;
+}
+
+.background {
+    width: 100%;
+    position: absolute;
+    /* 화면에서 원하는 위치 배치 가능 */
+    background-size: contain;
+    /* 원래 크기 유지 */
+    background-repeat: no-repeat;
+    z-index: -1;
+    /* FAQ 텍스트보다 뒤로 보내기 */
+}
+
+/* 첫 번째 원 (왼쪽 상단) */
+.background-circle1 {
+    background-image: url('/images/deco-circle-01.png');
+    width: 400px;
+    height: 400px;
+    top: 250px;
+    left: 0px;
+}
+
+/* 두 번째 원 (오른쪽 중간) */
+.background-circle2 {
+    background-image: url('/images/deco-circle-02.png');
+    width: 240px;
+    height: 240px;
+    top: 600px;
+    right: -85px;
+}
+
+/* 세 번째 원 (왼쪽 하단) */
+.background-circle3 {
+    background-image: url('/images/deco-circle-03.png');
+    width: 240px;
+    height: 240px;
+    bottom: -520px;
+    left: 50px;
+}
+
+/* 네 번째 원 (오른쪽 하단) */
+.background-circle4 {
+    background-image: url('/images/deco-circle-04.png');
+    width: 240px;
+    height: 240px;
+    bottom: -680px;
+    right: 70px;
+}
+
+
+/*푸터*/
+footer {
+    background-color: #575757;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links p,
+.footer-contact p {
+    text-align: left;
+    margin: 15px 250px;
+}
+
+.footer-links span {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-contact {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-contact>p {
+    font-size: 0.7em;
+    line-height: 5px;
+}
+
+.footer-social img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 268px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social>a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-social>a>p {
+    font-size: 0.8rem;
+    position: relative;
+    right: 413px;
+    top: 11px;
+}
+
+.footer-bottom>p {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 0.7em;
+    color: #FFFFFFDE;
+    height: 0px;
+}

@@ -1,9 +1,15 @@
 /* 폰트 설정 */
 
+/* 기본 폰트 패밀리 설정 */
+body {
+    font-family: 'Pretendard';
+}
+
+/* Pretendard */
 /* Light 폰트 (300 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    src: url('../font/Pretendard-Light.otf') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -11,7 +17,7 @@
 /* Regular 폰트 (400 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    src: url('../font/Pretendard-Regular.otf') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -19,7 +25,7 @@
 /* Medium 폰트 (500 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    src: url('../font/Pretendard-Medium.otf') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -27,7 +33,7 @@
 /* Semibold 폰트 (600 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Semibold.woff') format('woff');
+    src: url('../font/Pretendard-SemiBold.otf') format('woff');
     font-weight: 600;
     font-style: normal;
 }
@@ -35,7 +41,7 @@
 /* Bold 폰트 (700 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    src: url('../font/Pretendard-Bold.otf') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -43,7 +49,7 @@
 /* ExtraBold 폰트 (800 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    src: url('../font/Pretendard-ExtraBold.otf') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -51,15 +57,17 @@
 /* Black 폰트 (900 굵기) */
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    src: url('../font/Pretendard-Black.otf') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
+
+/* KBO-Dia-Gothic */
 /* Light 폰트 (300 굵기) */
 @font-face {
     font-family: 'KBO-Dia-Gothic';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    src: url('../font/KBO\ Dia\ Gothic_light.ttf') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -67,7 +75,7 @@
 /* Medium 폰트 (500 굵기) */
 @font-face {
     font-family: 'KBO-Dia-Gothic';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    src: url('../font/KBO\ Dia\ Gothic_medium.ttf') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -75,12 +83,7 @@
 /* Bold 폰트 (700 굵기) */
 @font-face {
     font-family: 'KBO-Dia-Gothic';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    src: url('../font/KBO\ Dia\ Gothic_bold.ttf') format('woff');
     font-weight: 700;
     font-style: normal;
-}
-
-/* 기본 폰트 패밀리 설정 */
-body {
-    font-family: 'Pretendard';
 }
