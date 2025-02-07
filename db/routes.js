@@ -1,5 +1,5 @@
 const express = require('express');
-const { submitApplication } = require('./Controller');
+const { submitApplication } = require('./controller');
 const router = express.Router();
 
 router.post('/apply', submitApplication);
