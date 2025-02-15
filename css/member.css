@@ -1,105 +1,105 @@
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  position: relative;
-}
-
 .nav-menu {
   display: flex;
-  gap: 20px;
+  gap: 4.9px;
 }
 
-@media (max-width: 375px) {
-  .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 10px;
-  }
-
-  .member {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      max-width: 320px;
-  }
-
-  .message {
-      max-width: 80%;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 12px;
-      background: #5ad2b5; 
-      color: white;
-  }
-
-
-  .profile {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin-bottom: 5px;
-  }
-
-  .member:nth-child(even) {
-      align-items: flex-end;
-  }
-
-  .hamburger-menu {
-      display: block;
-      position: absolute;
-      right: 10px;
-      top: 20px;
-  }
-
-  
-}
-
-@media screen and (max-width: 375px) {
-  body {
-      font-size: 14px; 
-      padding: 10px;
-  }
-
+/* 📌 전체 컨테이너: 크기는 그대로, 좌우 여백만 줄이기 */
+@media (max-width: 768px) {
   .container {
       width: 100%;
-      padding: 10px;
-  }
-
-  .chat-box {
-      width: 90%;
+      max-width: 95vw; /* 화면이 작아져도 요소 크기는 유지 */
       margin: 0 auto;
-      font-size: 12px;
+      padding: 0 10px; /* 좌우 여백 줄이기 */
   }
 
-  .profile-img {
-      width: 40px;
-      height: 40px;
+  /* 📌 텍스트 크기 고정 (크기가 작아지지 않도록) */
+  #title p, #sub p, .memberText, .membername {
+      font-size: 23px !important; /* 절대 크기로 설정 */
+      line-height: 39px !important;
   }
 
-  .chat-bubble {
-      max-width: 80%;
-      font-size: 12px;
-      padding: 8px;
+  /* 📌 멤버 이미지 크기 고정 */
+  .member img {
+      width: 28vw !important; /* 화면 크기에 영향받지 않도록 고정 */
+      height: auto;
+      max-height: 50vh !important;
   }
 
-  .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5px 10px;
+  /* 📌 Deco Circles 크기 고정 */
+  .deco-circles {
+      width: 500px !important;
+      height: 500px !important;
+      min-width: 500px;
+      min-height: 500px;
   }
 
+  /* 📌 Deco Circles가 잘려도 스크롤 없이 유지 */
+  .deco-circles-container {
+      overflow: hidden;
+  }
+
+  /* 📌 푸터 크기 고정 */
   .footer {
       text-align: center;
       font-size: 12px;
       padding: 10px;
   }
 }
+
+
+  /* 📌 멤버 리스트 (그리드 or 플렉스로 유지) */
+  .members-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px; /* 간격 유지 */
+  }
+
+  /* 📌 프로필 이미지 크기 유지 (좌우 여백만 조정) */
+  .member img {
+      width: auto;
+      max-width: 90%; /* 크기 조절 방지 */
+  }
+
+  /* 📌 Deco Circles 크기 고정 (작아지지 않도록!) */
+  .deco-circles {
+      width: 500px !important;
+      height: 500px !important;
+      min-width: 500px;
+      min-height: 500px;
+  }
+
+  /* 📌 Deco Circles가 화면을 넘어가도 자연스럽게 처리 */
+  .deco-circles-container {
+      overflow: hidden;
+  }
+
+  /* 📌 푸터 정리 */
+  .footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 10px;
+  }
+
+
+
+/* 📌 기본 (PC 버전)에서는 기존 이미지 유지 */
+
+/* 📌 모바일 크기 (768px 이하)에서 이미지 변경 */
+@media (max-width: 768px) {
+  .member1 img { content: url("../image/msg-member/member-1.svg"); }
+  .member2 img { content: url("../image/msg-member/member-2.svg"); }
+  .member3 img { content: url("../image/msg-member/member-3.svg"); }
+  .member4 img { content: url("../image/msg-member/member-4.svg"); }
+  .member5 img { content: url("../image/msg-member/member-5.svg"); }
+  .member6 img { content: url("../image/msg-member/member-6.svg"); }
+  .member7 img { content: url("../image/msg-member/member-7.svg"); }
+  .member8 img { content: url("../image/msg-member/member-8.svg"); }
+  .member9 img { content: url("../image/msg-member/member-9.svg"); }
+  .member10 img { content: url("../image/msg-member/member-10-2.svg"); }
+}
+
 
 body{
   font-family: 'Pretendard';
@@ -294,9 +294,6 @@ section,
   transform: scaleX(-1);
 }
 
-
-
-
 .members-container {
   display: flex;
   flex-wrap: wrap;
@@ -321,7 +318,6 @@ section,
   left: 12vw;
   top: 75vh;
 }
-
 
 .member2 {
   position: absolute;
@@ -481,8 +477,8 @@ section,
 
 .memberT5 {
   height: 9.35vh;
-  left: 26vw;
-  top: 342vh;
+  left: 30vw;
+  top: 340vh;
 }
 
 .memberT6 {
@@ -570,7 +566,6 @@ section,
   left: 25.94vw;
 }
 
-
 .membername {
   position: absolute;
   width: 150px;
@@ -586,7 +581,6 @@ section,
   font-family: 'Pretendard';
   font-weight: 600;
 }
-
 
 .highlight {
   font-family: 'Pretendard';
@@ -604,7 +598,6 @@ section,
   line-height: 2.59vh;
   font-weight: 500;
 }
-
 
 .thenext {
   color: #59f9cd;
