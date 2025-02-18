@@ -80,9 +80,97 @@
     border: 2px solid #59F9CD;
 }
 
+.arrow-left {
+    transform: rotate(-20deg);
+}
+
 .arrow-filled {
     font-size: 100px;
     color: white;
     background-color: #59F9CD;
     border: 2px solid #59F9CD;
+}
+
+.active {
+    font-family: 'KBO-Dia-Gothic';
+    font-size: 40px;
+    margin-top: 300px;
+    margin-left: 250px;
+
+}
+
+.activity-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box.make {
+    margin-left: 250px;
+    margin-top: 50px;
+    height: 720px;
+    width: 540px;
+    border-radius: 5%;
+    border: 2px solid #59F9CD;
+    justify-content: space-between;
+}
+
+.M {
+    font-size: 50px;
+    color: #59F9CD;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.DetailM {
+    font-weight: 300px;
+    font-size: 30px;
+    color: #9E9E9E;
+    padding-top: 10px;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+.BigM {
+    font-family: 'KBO-Dia-Gothic';
+    color: #59F9CD;
+    margin-left: 230px;
+    font-weight: 700;
+    font-size: 400px;
+    overflow: hidden;
+}
+
+.BigS {
+    font-family: 'KBO-Dia-Gothic';
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 400px;
+    margin-left: 170px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.BigG {
+    font-family: 'KBO-Dia-Gothic';
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 400px;
+    margin-left: 120px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.box.share {
+    width: 382px;
+    height: 720px;
+    border-radius: 5%;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.box.gather {
+    width: 382px;
+    height: 720px;
+    border-radius: 5%;
+    background-color: #EEEEEE;
 }
