@@ -1,73 +1,176 @@
-main {
-    position: relative; 
-    width: 100%;
-    min-height: calc(var(--page-height) + 1500px);
-}
-
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    min-height: 1000px;
-}
- 
-.activity {
-    margin-top: 500px; 
-    font-size: 30px;
-    margin-right: auto;
-    margin-left: 250px;
-}
-
-.boxM {
-    margin-top: 50px;
-    margin-left: 100px;
-}
-
-.bubble {
-    font-family: 'KBO-Dia-Gothic';
-    position: absolute; 
-    font-size: 60px;
-    font-weight: bold;
-    border-radius: 140px;
-    padding: 120px 150px;
     text-align: center;
-    border: 3px solid #59F9CD;
-    color: #59F9CD;
-    background-color: white;
 }
 
-.bubble.filled {
-    font-family: 'KBO-Dia-Gothic';
+.Make {
+    width: 400px;
+    height: 250px;
+    font-size: 50px;
     background-color: #59F9CD;
     color: white;
+    border-radius: 120px;
+    margin-top: 170px;
+    margin-left: 50px;
+    text-align: center;
+    line-height: 250px;
+}
+
+.Share {
+    width: 400px;
+    height: 250px;
+    font-size: 60px;
+    -webkit-text-stroke: 0.5px #88FFA9;
+    color: white;
+    border-radius: 120px;
+    margin-left: 490px;
+    text-align: center;
+    line-height: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#88FFA9;
+}
+
+.gather-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Gather {
+    width: 400px;
+    height: 250px;
+    font-size: 50px;
+    border-radius: 120px;
+    text-align: center;
+    line-height: 250px;
+    border-style: solid;
+    margin-left: 50px;
 }
 
 .arrow {
-    font-family: 'KBO-Dia-Gothic';
-    align-items: center; 
-    justify-content: center; 
-    position: absolute;
-    font-size: 150px;
-    font-weight: bold;
     width: 400px;
-    height: 300px;
-    border-radius: 140px;
+    height: 250px;
+    font-size: 50px;
+    border-radius: 120px;
     text-align: center;
-    line-height: 60px;
-    border: 3px solid #59F9CD;
+    line-height: 250px;
+    border-style: solid;
+    margin-left: 50px;
+}
+
+.arrow-filled {
+    width: 400px;
+    height: 250px;
+    font-size: 50px;
+    border-radius: 120px;
+    text-align: center;
+    line-height: 250px;
+    border-style: solid;
+    margin-left: 500px;
+}
+
+.Gather {
+    color: #88FFA9;
+    border: 2px solid #88FFA9;
+}
+
+.arrow {
+    font-size: 100px;
     color: #59F9CD;
+    border: 2px solid #59F9CD;
 }
 
-.arrow.filled {
-    font-family: 'KBO-Dia-Gothic';
-    background-color: #59F9CD;
+.arrow-left {
+    transform: rotate(-20deg);
+}
+
+.arrow-filled {
+    font-size: 100px;
     color: white;
+    background-color: #59F9CD;
+    border: 2px solid #59F9CD;
 }
 
-.bubble:nth-child(1) { left: 30px; top: 150px; }  
-.bubble:nth-child(2) { left: 500px; top: 450px; } 
-.arrow:nth-child(3)  { left: 30px; top: 750px; }
-.arrow:nth-child(4)  { left: 950px; top: 750px; } 
-.bubble:nth-child(5) { left: 1440px; top: 750px; } 
+.active {
+    font-family: 'KBO-Dia-Gothic';
+    font-size: 40px;
+    margin-top: 300px;
+    margin-left: 250px;
+
+}
+
+.activity-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box.make {
+    margin-left: 250px;
+    margin-top: 50px;
+    height: 720px;
+    width: 540px;
+    border-radius: 5%;
+    border: 2px solid #59F9CD;
+    justify-content: space-between;
+}
+
+.M {
+    font-size: 50px;
+    color: #59F9CD;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.DetailM {
+    font-weight: 300px;
+    font-size: 30px;
+    color: #9E9E9E;
+    padding-top: 10px;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+.BigM {
+    font-family: 'KBO-Dia-Gothic';
+    color: #59F9CD;
+    margin-left: 230px;
+    font-weight: 700;
+    font-size: 400px;
+    overflow: hidden;
+}
+
+.BigS {
+    font-family: 'KBO-Dia-Gothic';
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 400px;
+    margin-left: 170px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.BigG {
+    font-family: 'KBO-Dia-Gothic';
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 400px;
+    margin-left: 120px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.box.share {
+    width: 382px;
+    height: 720px;
+    border-radius: 5%;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.box.gather {
+    width: 382px;
+    height: 720px;
+    border-radius: 5%;
+    background-color: #EEEEEE;
+}
