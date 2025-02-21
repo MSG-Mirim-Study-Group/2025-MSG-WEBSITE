@@ -63,3 +63,9 @@ document.querySelectorAll('.menu-item').forEach(item => {
         item.style.fontWeight = '700';
     }
 });
+
+document.querySelectorAll('.footer-menu-item').forEach(item => {
+    if (item.href === window.location.href) {
+        item.style.textDecoration = 'underline';
+    }
+});

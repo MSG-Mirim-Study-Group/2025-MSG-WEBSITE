@@ -45,7 +45,7 @@ body {
 
 a { 
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration-line: none; 
 }
 li { list-style: none; }
@@ -153,10 +153,9 @@ footer {
 .footer-menu { padding: 7vh 0; }
 .footer-menu a {
     display: block;
-    margin: 20px 0;
+    margin-top: 3vh;
     font-size: 2.5vh;
 }
-.footer-menu a.active { text-decoration: underline; }
 
 .footer-connect { font-size: 2vh; }
 .footer-connect .president {
@@ -219,9 +218,33 @@ footer {
     .nav-menu {
         display: none;
     }
-
     .menu-toggle {
         display: block;
     }
+
+    .floating {
+        display: none;
+    }
+
+    a { font-weight: 400; }
+
+    .footer-menu { padding: 3vh 0; }
+    .footer-menu a {
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+    .footer-connect { font-size: 1.5vh; }
+    .footer-connect .president::after { 
+        padding: 0 6px 0 10px; 
+    }
+    .footer-instagram { 
+        font-size: 1.5vh;
+        margin: 2vh 0; 
+    }
+    .footer-instagram img { 
+        width: 2vh;
+        margin-right: 1.5vw;
+    }
+    .footer-copyright { font-size: 1vh; }
 }
 
