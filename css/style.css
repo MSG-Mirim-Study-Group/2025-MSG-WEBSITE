@@ -231,15 +231,15 @@ footer {
     .footer-menu { padding: 3vh 0; }
     .footer-menu a {
         font-size: 2vh;
-        margin-top: 2vh;
+        margin-top: 1.5vh;
     }
-    .footer-connect { font-size: 1.5vh; }
+    .footer-connect { font-size: 1.4vh; }
     .footer-connect .president::after { 
         padding: 0 6px 0 10px; 
     }
     .footer-instagram { 
         font-size: 1.5vh;
-        margin: 2vh 0; 
+        margin: 3vh 0; 
     }
     .footer-instagram img { 
         width: 2vh;
