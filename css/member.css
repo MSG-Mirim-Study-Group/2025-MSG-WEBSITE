@@ -1,85 +1,18 @@
-@media (max-width: 768px) {
-  .member1 img { content: url("../image/member/member-1.svg"); }
-  .member2 img { content: url("../image/member/member-2.svg"); }
-  .member3 img { content: url("../image/member/member-3.svg"); }
-  .member4 img { content: url("../image/member/member-4.svg"); }
-  .member5 img { content: url("../image/member/member-5.svg"); }
-  .member6 img { content: url("../image/member/member-6.svg"); }
-  .member7 img { content: url("../image/member/member-7.svg"); }
-  .member8 img { content: url("../image/member/member-8.svg"); }
-  .member9 img { content: url("../image/member/member-9.svg"); }
-  .member10 img { content: url("../image/member/member-10-2.svg"); }
-}
-@media (max-width: 768px) {
-
-  /* 📌 전체 컨테이너 여백 조정 */
-  .container {
-      max-width: 95vw;
-      margin: 0 auto;
-      padding: 0 10px;
-  }
-
-  /* 📌 이미지 크기 유지 */
-  .member img {
-      width: 40vw !important;
-      height: auto;
-      max-height: 50vh !important;
-  }
-
-  /* 📌 텍스트 크기 유지 */
-  #title p, #sub p, .memberText, .membername {
-      font-size: 23px !important;
-      line-height: 39px !important;
-  }
-
-  /* 📌 멤버 간 간격 조정 (위아래 간격만 조절) */
-  .members-container {
-      margin-bottom: 1px; /* 이미지 사이 간격 추가 */
-  }
-
-  /* 📌 Deco Circles 크기 유지 */
-  .deco-circles {
-      width: 500px !important;
-      height: 500px !important;
-      min-width: 500px;
-      min-height: 500px;
-  }
-}
-.nav-menu { display: flex; gap: 5px;}
-
-/* 📌 body 전체 높이 유지 */
-body, html {
-  height: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+  overflow-x: hidden;
 }
 
-/* 📌 wrapper가 컨텐츠를 채우고 푸터를 밀어내도록 설정 */
-.wrapper {
-  flex: 1; /* 푸터를 밀어내기 위한 flex 설정 */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
+footer {
+  transform: translateY(640%); 
 }
 
-/* 📌 absolute 요소들의 부모 컨테이너 높이를 확보 */
 .members-container {
-  min-height: 200vh; /* 페이지 높이를 늘려서 푸터가 정상적으로 내려가게 설정 */
+  min-height: 200vh; 
 }
 
 section {
   flex-grow: 1;
   min-height: 200vh;
-}
-
-/* 📌 푸터 설정 */
-footer {
-  position: relative; /* 기존 translateY 제거 */
-  width: 100%;
-  margin-top: auto;
-  transform: translateY(800%); 
 }
 
 #title p { font-family: "KBO-Dia-Gothic"; font-weight: 500; color: #424242;}
@@ -97,18 +30,19 @@ footer {
 .major { font-family: 'Pretendard'; font-weight: 500;}
 
 .membername, .major{ font-size: 1vw;}
+
 #title p{
-  position: absolute;
+  position: relative;
   width: 15%;
   left: 14%;
-  top: 25vh;
+  top: 16vh;
   font-size: 3.5vw;
   line-height: 5vw;
 }
 
 #sub p{
   position: absolute;
-  width: 40%;
+  width: 100%;
   left: 14%;
   top: 35vh;
   font-size: 1.7vw;
@@ -129,9 +63,9 @@ footer {
 #sixteen p{
   text-align: center;
   position: relative;
-  width: 50%;
-  left: 25%;
-  top: 790vh;
+  width: 100%;
+  left: 3%;
+  top: 770vh;
   font-size: 5vw;
 }
 
@@ -231,27 +165,27 @@ footer {
 
 .member img { width: 100%; height: auto; object-fit: cover;}
 
-.member1 { position: absolute; left: 12vw; top: 75vh;}
+.member1 { position: relative; left: -7vw; top: 27vh;}
 
-.member2 { position: absolute; left: 56vw; top: 141vh;}
+.member2 { position: relative; left: 3.5vw; top: 92.5vh;}
 
-.member3 { position: absolute; left: 10vw; top: 191vh;}
+.member3 { position: relative; left: -11vw; top: 82.5vh;}
 
-.member4 { position: absolute; left: 58vw; top: 256vh;}
+.member4 { position: relative; left: 2vw; top: 148vh;}
 
-.member5 { position: absolute; left: 15vw; top: 331vh;}
+.member5 { position: relative; left: -4vw; top: 162vh;}
 
-.member6 { position: absolute; left: 50vw; top: 406vh;}
+.member6 { position: relative; left: -8.5vw; top: 238vh;}
 
-.member7 { position: absolute; left: 8vw; top: 481vh;}
+.member7 { position: relative; left: -9vw; top: 255vh;}
 
-.member8 { position: absolute; left: 55vw; top: 526vh;}
+.member8 { position: relative; left: -7vw; top: 300vh;}
 
-.member9 { position: absolute; left: 9vw; top: 591vh;}
+.member9 { position: relative; left: -5vw; top: 305vh;}
 
-.member10 { position: absolute; left: 50vw; top: 671vh;}
+.member10 { position: relative; left: -4vw; top: 385vh;}
 
-.member11 { position: absolute; left: 30vw; top: 731vh;}
+.member11 { position: relative; left: -10vw; top: 375vh;}
 
 .member1 img{ width: 28vw; max-height: 50vh;}
 
@@ -291,23 +225,23 @@ footer {
 
 .memberT1 { height: 13.28vh; left: 21vw; top: 101vh;}
 
-.memberT2 { height: 19.39vh; left: 67.5vw; top: 143vh;}
+.memberT2 { height: 19.39vh; left: 67.5vw; top: 143.7vh; line-height: 35px;}
 
-.memberT3 { height: 18.15vh; left: 17vw; top: 212vh;}
+.memberT3 { height: 18.15vh; left: 17vw; top: 213.5vh; line-height: 34px; font-size: 21px;}
 
 .memberT4 { height: 8.89vh; left: 61.5vw; top: 284vh;}
 
-.memberT5 { height: 9.35vh; left: 30vw; top: 340vh;}
+.memberT5 { height: 9.35vh; left: 29vw; top: 340vh; font-size: 27px;}
 
-.memberT6 { height: 9.35vh; left: 59.5vw; top: 434vh;}
+.memberT6 { height: 9.35vh; left: 59vw; top: 434vh; font-size: 26px;}
 
-.memberT7 { height: 18.15vh; left: 15vw; top: 482.5vh;}
+.memberT7 { height: 18.15vh; left: 15vw; top: 485vh; line-height: 32px; font-size: 21px;}
 
-.memberT8 { height: 8.89vh; left: 63vw; top: 555vh;}
+.memberT8 { height: 8.89vh; left: 62.5vw; top: 555vh; font-size: 25px;}
 
-.memberT9 { height: 18.15vh; left: 11vw; top: 613.5vh;}
+.memberT9 { height: 18.15vh; left: 11vw; top: 614.5vh; line-height: 36px;}
 
-.memberT10 { height: 13.33vh; left: 63vw; top: 678vh;}
+.memberT10 { height: 13.33vh; left: 63vw; top: 678vh; font-size: 25px;}
 
 .memberN1 { top: 84vh; left: 28vw;}
 
@@ -329,7 +263,6 @@ footer {
 
 .memberN10 { top: 691vh; left: 50.5vw;}
 
-.memberN11 { top: 600vh; left: 25.94vw;}
 
 .membername {
   position: absolute;
@@ -359,3 +292,56 @@ footer {
 }
 
 .thenext {color: #59f9cd;}
+
+@media screen and (max-width: 768px) {
+  .member1 img { content: url("../image/member/member-1.svg"); }
+  .member2 img { content: url("../image/member/member-2.svg"); }
+  .member3 img { content: url("../image/member/member-3.svg"); }
+  .member4 img { content: url("../image/member/member-4.svg"); }
+  .member5 img { content: url("../image/member/member-5.svg"); }
+  .member6 img { content: url("../image/member/member-6.svg"); }
+  .member7 img { content: url("../image/member/member-7.svg"); }
+  .member8 img { content: url("../image/member/member-8.svg"); }
+  .member9 img { content: url("../image/member/member-9.svg"); }
+  .member10 img { content: url("../image/member/member-10-2.svg"); }
+}
+
+@media screen and (max-width: 768px) {
+
+  .deco-circles-01, .deco-circles-03, .deco-circles-05,  .deco-circles-07 {
+    width: 70vw !important;  /* 크기 조정 */
+    height: 70vw !important;
+  }
+
+  .deco-circles-02, .deco-circles-04, .deco-circles-06,  .deco-circles-08 {
+    width: 110vw !important;  /* 크기 조정 */
+    height: 110vw !important;
+  }
+
+  .deco-circles-01 { top: 21vh; left: -7vw; }
+  .deco-circles-02 { top: 12.5vh; left: -25vw;}
+  .deco-circles-03 { top: 47.5vh; left: 52vw;}
+  .deco-circles-04 { top: 38vh; }
+  .deco-circles-05 { top: 82vh; left: 35vw;}
+  .deco-circles-06 { top: 73vh; left: 13.5vw;}
+  .deco-circles-07 { top: 114vh; left: -13vw;}
+  .deco-circles-08 { top: 105vh; left: -30vw;}
+
+  #title p { top: 5vh; font-size: 4.5vw;}
+
+  #sub p { top: 16.5vh; font-size: 3.5vw;}
+
+  #fourteen p { top: 19vh; font-size: 3vw; }
+
+  .member1 img{ width: 18vh; top: 10vh !important; left: 5vw;}
+  .member2 img{ width: 25vh;}
+  .member3 img{ width: 19vh;}
+  .member4 img{ width: 18vh;}
+  .member5 img{ width: 23vh;}
+  .member6 img{ width: 18vh;}
+  .member7 img{ width: 25vh;}
+  .member8 img{ width: 18vh;}
+  .member9 img{ width: 18vh;}
+  .member10 img{ width: 25vh;}
+  .member11 img{ width: 20vh;}
+}
