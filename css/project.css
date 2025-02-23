@@ -140,3 +140,85 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+
+/* 태블릿 및 모바일 버전 */
+@media screen and (max-width: 768px) {
+    
+    .project-title {
+        font-size: 3vw;
+    }
+
+    .swiper {
+        margin-bottom: 10vh;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .swiper-slide img {
+        position: relative;
+        left: -35px;
+        width: auto;
+        max-width: 65vw;
+        height: 25vh;
+        border-radius: 10px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .custom-button-prev, .custom-button-next {
+        position: absolute;
+        top: 35%;
+        width: 70px; /* 버튼 크기 조절 */
+        height: 40px;
+    }
+
+    .custom-button-prev {
+        left: 15%; /* 왼쪽 위치 조절 */
+    }
+    
+    .custom-button-next {
+        right: 7%; /* 오른쪽 위치 조절 */
+    }
+
+    .slide-grade {
+        font-size: 2vw;
+    }
+
+    .slide-title {
+        font-size: 3vw;
+    }
+    
+    .slide-content{
+        font-size: 2vw;
+    }
+
+    .award-container {
+        padding-left: 8.8438vw; /* 왼쪽 패딩 */
+        padding-right: 8.8438vw;
+    }
+
+    .reward-list th, .reward-list td {
+        font-size: 2.1vw;
+    }
+
+    .reward-list th:nth-child(2), 
+    .reward-list td:nth-child(2) {
+        display: none;
+    }
+
+    .reward-list th:nth-child(1), 
+.reward-list td:nth-child(1) {
+    padding-right: 10vw;
+}
+.swiper-slide-active {
+    z-index: 10; /* 가운데 이미지가 위로 올라오도록 설정 */
+}
+}
+
