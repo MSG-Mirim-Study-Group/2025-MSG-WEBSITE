@@ -1,3 +1,21 @@
+/* 미디어 쿼리 */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+    /* 여기에 CSS 작성 */
+  }
+
+  @media all and (orientation: portrait) {
+    /* 세로 모드일 때 적용 */
+  }
+  @media all and (orientation: landscape) {
+    /* 가로 모드일 때 적용 */
+}
+
+@media (max-width: 375px) {
+    img {
+      max-width: 110.2px;
+    }
+  }
+
 .container {
     text-align: center;
 }
@@ -98,9 +116,8 @@
 .active {
     font-family: 'KBO-Dia-Gothic';
     font-size: 4vh;
-    margin-top: 30vh;
+    margin-top: 50vh;
     margin-left: 35vh;
-
 }
 
 .activity-container {
@@ -109,8 +126,9 @@
 }
 
 .box.make {
-    margin-left: 33vh;
-    margin-top: 5vh;
+    margin-left: 34vh;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
     height: 76vh;
     width: 54vh;
     border-radius: 5%;
@@ -135,6 +153,7 @@
     line-height: 1.5;
 }
 
+
 .BigM {
     font-family: 'KBO-Dia-Gothic';
     color: #59F9CD;
@@ -149,8 +168,8 @@
     color: #BDBDBD;
     font-weight: 700;
     font-size: 40vh;
-    margin-left: 17vh;
-    margin-top: 20vh;
+    margin-left: 13vh;
+    margin-top: 25vh;
     overflow: hidden;
 }
 
@@ -159,8 +178,8 @@
     color: #BDBDBD;
     font-weight: 700;
     font-size: 40vh;
-    margin-left: 17vh;
-    margin-top: 20vh;
+    margin-left: 13vh;
+    margin-top: 25vh;
     overflow: hidden;
 }
 
@@ -170,6 +189,24 @@
     border-radius: 5%;
     background-color: #EEEEEE;
     display: flex;
+    margin-top: 9.8vh;
+}
+
+.box.share:hover {
+    width: 50vh;
+    height: 76vh;
+    background-color: white;
+    border: 0.1vh solid #59F9CD;
+}
+
+.box.share:hover::before {
+    content: "SHARE";
+    color: #59F9CD;
+    font-weight: 500;
+    font-size: 5vh;
+    margin-top: 5vh;
+    margin-left: 4vh;
+    display: inline;   
 }
 
 .box.gather {
@@ -177,4 +214,22 @@
     height: 76vh;
     border-radius: 5%;
     background-color: #EEEEEE;
+    margin-top: 9.8vh;
+}
+
+.box.gather:hover {
+    width: 50vh;
+    height: 76vh;
+    background-color: white;
+    border: 0.1vh solid #59F9CD;
+}
+
+.box.gather:hover::before {
+    content: "GATHER";
+    color: #59F9CD;
+    font-weight: 500;
+    font-size: 5vh;
+    margin-top: 5vh;
+    margin-left: 4vh;
+    display: inline;   
 }
