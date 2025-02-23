@@ -1,73 +1,180 @@
-main {
-    position: relative; 
-    width: 100%;
-    min-height: calc(var(--page-height) + 1500px);
-}
-
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    min-height: 1000px;
-}
- 
-.activity {
-    margin-top: 500px; 
-    font-size: 30px;
-    margin-right: auto;
-    margin-left: 250px;
-}
-
-.boxM {
-    margin-top: 50px;
-    margin-left: 100px;
-}
-
-.bubble {
-    font-family: 'KBO-Dia-Gothic';
-    position: absolute; 
-    font-size: 60px;
-    font-weight: bold;
-    border-radius: 140px;
-    padding: 120px 150px;
     text-align: center;
-    border: 3px solid #59F9CD;
-    color: #59F9CD;
-    background-color: white;
 }
 
-.bubble.filled {
+.Make {
     font-family: 'KBO-Dia-Gothic';
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
     background-color: #59F9CD;
     color: white;
+    border-radius: 120vh;
+    margin-top: 30vh;
+    margin-left: 5vh;
+    text-align: center;
+    line-height: 30vh;
+    font-weight: 500;
+}
+
+.Share {
+    font-family: 'KBO-Dia-Gothic';
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    -webkit-text-stroke: 0.5px #88FFA9;
+    color: white;
+    border-radius: 120vh;
+    margin-left: 55vh;
+    text-align: center;
+    line-height: 30vh;
+    border-style: solid;
+    border-width: 0.1vh;
+    border-color:#88FFA9;
+}
+
+.gather-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Gather {
+    font-family: 'KBO-Dia-Gothic';
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    border-radius: 120vh;
+    text-align: center;
+    line-height: 30vh;
+    border-style: solid;
+    margin-left: 7vh;
 }
 
 .arrow {
-    font-family: 'KBO-Dia-Gothic';
-    align-items: center; 
-    justify-content: center; 
-    position: absolute;
-    font-size: 150px;
-    font-weight: bold;
-    width: 400px;
-    height: 300px;
-    border-radius: 140px;
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    border-radius: 120vh;
     text-align: center;
-    line-height: 60px;
-    border: 3px solid #59F9CD;
+    line-height: 250px;
+    border-style: solid;
+    margin-left: 50px;
+}
+
+.arrow-filled {
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    border-radius: 120vh;
+    text-align: center;
+    line-height: 30vh;
+    border-style: solid;
+    margin-left: 50vh;
+}
+
+.Gather {
+    color: #88FFA9;
+    border: 0.1vh solid #88FFA9;
+}
+
+.arrow {
+    font-size: 100px;
     color: #59F9CD;
+    border: 0.1vh solid #59F9CD;
 }
 
-.arrow.filled {
-    font-family: 'KBO-Dia-Gothic';
-    background-color: #59F9CD;
+.arrow-left {
+    transform: rotate(-20deg);
+}
+
+.arrow-filled {
+    font-size: 10vh;
     color: white;
+    background-color: #59F9CD;
+    border: 0.1vh solid #59F9CD;
 }
 
-.bubble:nth-child(1) { left: 30px; top: 150px; }  
-.bubble:nth-child(2) { left: 500px; top: 450px; } 
-.arrow:nth-child(3)  { left: 30px; top: 750px; }
-.arrow:nth-child(4)  { left: 950px; top: 750px; } 
-.bubble:nth-child(5) { left: 1440px; top: 750px; } 
+.active {
+    font-family: 'KBO-Dia-Gothic';
+    font-size: 4vh;
+    margin-top: 30vh;
+    margin-left: 35vh;
+
+}
+
+.activity-container {
+    display: flex;
+    gap: 2vh;
+}
+
+.box.make {
+    margin-left: 33vh;
+    margin-top: 5vh;
+    height: 76vh;
+    width: 54vh;
+    border-radius: 5%;
+    border: 0.1vh solid #59F9CD;
+    justify-content: space-between;
+}
+
+.M {
+    font-size: 5vh;
+    color: #59F9CD;
+    font-weight: 500;
+    margin-left: 4vh;
+    margin-top: 5vh;
+}
+
+.DetailM {
+    font-weight: 300;
+    font-size: 3vh;
+    color: #9E9E9E;
+    padding-top: 1vh;
+    margin-left: 4vh;
+    line-height: 1.5;
+}
+
+.BigM {
+    font-family: 'KBO-Dia-Gothic';
+    color: #59F9CD;
+    margin-left: 19vh;
+    font-weight: 700;
+    font-size: 40vh;
+    overflow: hidden;
+}
+
+.BigS {
+    font-family: 'KBO-Dia-Gothic';
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 40vh;
+    margin-left: 17vh;
+    margin-top: 20vh;
+    overflow: hidden;
+}
+
+.BigG {
+    font-family: 'KBO-Dia-Gothic';
+    color: #BDBDBD;
+    font-weight: 700;
+    font-size: 40vh;
+    margin-left: 17vh;
+    margin-top: 20vh;
+    overflow: hidden;
+}
+
+.box.share {
+    width: 38vh;
+    height: 76vh;
+    border-radius: 5%;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.box.gather {
+    width: 38vh;
+    height: 76vh;
+    border-radius: 5%;
+    background-color: #EEEEEE;
+}

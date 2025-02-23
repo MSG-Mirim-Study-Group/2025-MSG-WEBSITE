@@ -4,10 +4,15 @@
 }
 
 .content-banner {
-    height: var(--page-height); 
+    height: var(--page-height);
     margin: 0 calc(-1 * var(--basic-padding));  /* padding 만큼 빼기 */
     background-image: url(../image/msg/banner-background.png);
     background-size: cover;
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
 }
 .banner-img {
     position: absolute;
@@ -15,18 +20,21 @@
     top: 2vh;
     right: 11vw;
     z-index: 0;
+
+    animation: floating 3s ease-in-out infinite; /* 부드럽게 반복 */
 }
 
 
-.content-about {
-    margin: 30vh 0;
-}
+.content-about { margin: 30vh 0; }
 .content-about h1, h2, h3 {
     font-family: 'KBO-Dia-Gothic';
     font-weight: 500;
     color: var(--black-color-02);
 }
 .content-about h2, h3 {
+    font-size: 2vw;
+}
+.content-slogan h2, h3 {
     font-size: 2vw;
     margin: 2vh 0;
 }
@@ -36,9 +44,7 @@
     left: 45vw;
 }
 
-.content-slogan {
-    text-align: center;
-}
+.content-slogan { text-align: center; }
 .content-slogan h1 {
     font-size: 4vw;
     margin: 5vh 0;
@@ -52,18 +58,14 @@
     margin: 8vh 0;
 }
 
-.content-desc {
-    margin: 10vh 0;
-}
+.content-desc { margin: 10vh 0; }
 .content-desc p {
     font-size: 1vw;
     color: var(--gray-color-02);
     margin: 3vh 0;
 }
 
-.content-passion {
-    margin-top: 19vh;
-}
+.content-passion { margin-top: 19vh; }
 .group {
     display: flex;
     justify-content: space-between;
@@ -71,7 +73,7 @@
 }
 .circle {
     border: 2px solid var(--main-color-01);
-    width: 300px; height: 300px;
+    width: 20vw; height: 20vw;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -92,4 +94,40 @@
     font-size: 4vw;
     font-weight: 600;
     color: var(--black-color-01);
+}
+
+@media screen and (max-width: 768px) {
+    .content-banner { height: 48vw; }
+    @keyframes floating {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
+    }
+    .banner-img { top: 8vh; }
+
+    .content-about { margin: 10vw 0; }
+    .content-about h2, h3 { font-size: 1em; }
+    .arrow { left: 50vw; }
+
+    .content-slogan h1 {
+        font-size: 1.5em;
+        margin: 5vh;
+    }
+    .logo-deco { margin-bottom: 3vh; }
+    .slogan {
+        margin: 0;
+        margin-bottom: 3vh; 
+    }
+
+    .content-desc { margin: 5vh 0; }
+    .content-desc p {
+        font-size: 3vw;
+        margin: 1vh 0;
+    }
+
+    .content-passion { 
+        margin-top: 0;
+        margin-bottom: 6.5vh;
+    }
+    .group { margin: 3vh 0; }
 }
