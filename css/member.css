@@ -1,5 +1,7 @@
-body{
+body {
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .main {
@@ -15,6 +17,7 @@ body{
   width: 100vw;  /* 적절한 크기 조정 */
   max-width: 100vw;
 }
+
 
 #title p { font-family: "KBO-Dia-Gothic"; font-weight: 500; color: #424242;}
 
@@ -139,7 +142,7 @@ body{
 
 .memberI10 {
   margin-left: 16vw;
-  margin-top: -10vh;
+  margin-top: -5vh;
 }
 
 .memberI11 {
@@ -219,13 +222,111 @@ body{
 
 @media screen and (max-width: 768px) {
   .memberI { gap: 5vw; padding: 6vw; }
+  header { position: fixed ;}  
 }
 
-@media screen and (max-width: 375px) {
-  #title p { margin-top: 5vh; font-size: 5vw; }
-  #sub p { margin-top: 1vh; font-size: 3vw; }
-  #fourteen p, #fifteen p { font-size: 4vw; }
-  #fourteen p { margin-top: 8vh; }
-  #fifteen p { margin-top: -10vh; }
-  .memberI { gap: 7vw; padding: 8vw; }
+
+/* 모바일 버전!! */
+
+@media screen and (max-width: 400px) {
+  .main {
+    padding-bottom: 30vh; /* footer와 sixteen 사이 공간 더 줄임 */
+  }
+
+  header { position: fixed ;}
+
+  #title p { margin-top: 9vh; }
+
+  #fifteen p { margin-top: 10vh; }
+
+  #sixteen p { margin-top: 8vh; margin-bottom: 1vh;}
+
+  .memberI {
+    gap: 25vw;
+    padding: 20vw;
+  }
+
+  .memberI img {
+    width: 55vw; /* 모바일에서 이미지 크기 더 확대 */
+    max-width: 100vw;
+    height: auto;
+    margin-left: -20vw;
+  }
+
+  .memberI1 img{
+    width: 53vw;
+    margin-left: -20vw;
+    margin-top: -20vh;
+  }
+
+  .memberI2 img{
+    width: 70vw;
+    margin-left: -55vw;
+    margin-top: -18vw;
+  }
+
+  .memberI3 img{
+    width: 55vw;
+    margin-left: -20vw;
+    margin-top: -16vw;
+  }
+
+  .memberI4 img{
+    width: 55vw;
+    margin-left: -50vw;
+    margin-top: -15vw;
+  }
+
+  .memberI5 img{
+    width: 70vw;
+    margin-left: -30vw;
+    margin-top: -10vw;
+  }
+
+  .memberI6 img{
+    width: 57vw;
+    margin-left: -50vw;
+    margin-top: -20vh;
+  }
+
+  .memberI7 img{
+    width: 80vw;
+    margin-left: 0vw;
+    margin-top: -5vw;
+  }
+
+  .memberI8 img{
+    width: 60vw;
+    margin-left: -55vw;
+    margin-top: -5vw;
+  }
+
+  .memberI9 img{
+    width: 65vw;
+    margin-left: -0vw;
+    margin-top: 0vw;
+  }
+
+  .memberI10 img{
+    width: 80vw;
+    margin-left: -70vw;
+    margin-top: -5vw;
+  }
+
+  .memberI11 img{
+    width: 70vw;
+  }
+
+  .deco-circles-01 img {
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw; /* 전체 화면 너비와 동일한 비율 유지 */
+    height: 200vh; /* 전체 화면 높이와 동일한 비율 유지 */
+    max-width: 200vw;
+    max-height: 200vh;
+    opacity: 0.3;
+    z-index: 4;
+  }
 }
