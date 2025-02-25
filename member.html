@@ -3,151 +3,141 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no" content="user-scalable=0;">
     <title>Member</title>
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/member.css">
 </head>
 
-<body style="overflow-x: hidden">
-    <div class="wrapper">
-        <header>
-            <img src="./image/logo.svg" class="header-logo" alt="로고">
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="./MSG.html" class="header-menu">MSG 소개</a></li>
-                    <li><a href="./project.html" class="header-menu">프로젝트</a></li>
-                    <li><a href="./activity.html" class="header-menu">활동</a></li>
-                    <li><a href="./member.html" class="header-menu">부원</a></li>
-                    <li><a href="./FAQ.html" class="header-menu">FAQ</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+<body>
+    <header>
+        <img src="./image/logo.svg" class="header-logo" alt="로고">
 
-        <section class="section">
-            <div id="title">
-                <p>부원</p>
+        <button class="menu-toggle">
+            <img src="./image/header-button.svg" class="toggle">
+        </button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="./MSG.html" class="header-menu">MSG 소개</a>
+                    <a href="./project.html" class="header-menu">프로젝트</a>
+                    <a href="./activity.html" class="header-menu">활동</a>
+                    <a href="./member.html" class="header-menu">부원</a>
+                    <a href="./FAQ.html" class="header-menu">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메뉴 페이지 -->
+    <div class="menu-page">
+        <div class="menu-header">
+            <img src="./image/logo.svg" alt="로고">
+        </div>
+        
+        <div class="menu-content">
+            <a href="./MSG.html" class="menu-item">MSG 소개</a>
+            <a href="./project.html" class="menu-item">프로젝트</a>
+            <a href="./activity.html" class="menu-item">활동</a>
+            <a href="./member.html" class="menu-item">부원</a>
+            <a href="./FAQ.html" class="menu-item">FAQ</a>
+        </div>
+        
+        <div class="menu-footer">
+            <div class="support-link">
+                <img src="./image/logo.svg" alt="logo">
+                <p>지원하러 가기</p>
             </div>
-            <div id="sub">
-                <p>16기와 함께할 선배들이에요! &lt;3 </p>
+        </div>
+    </div>
+
+<!-- ============= 메인 ================ -->
+
+        <main class="main">
+            <div class="member-wrapper">    
+            <div class="index">
+                <div id="title">
+                    <p>부원</p>
+                </div>
+                <div id="sub">
+                    <p>16기와 함께할 선배들이에요! &lt;3 </p>
+                </div>
+                <div id="fourteen">
+                    <p>14기</p>
+                </div>
             </div>
-            <div id="fourteen">
-                <p>14기</p>
+            
+            <div class="member1">
+                <div class="memberI memberI1"><img src="./image/member/member-01.svg" alt="지현"></div>
             </div>
+
+            <div class="member2">
+                <div class="memberI memberI2"><img src="./image/member/member-02.svg" alt="혜원"></div>
+            </div>
+
+            <div class="member3">
+                <div class="memberI memberI3"><img src="./image/member/member-03.svg" alt="하영"></div>
+            </div>
+
+            <div class="member4">
+                <div class="memberI memberI4"><img src="./image/member/member-04.svg" alt="수빈"></div>
+            </div>
+
+            <div class="member5">
+                <div class="memberI memberI5"><img src="./image/member/member-05.svg" alt="경민"></div>
+            </div>
+
             <div id="fifteen">
                 <p>15기</p>
             </div>
-            <div id="sixteen">
-                <p>NOW, <br>You are <span class="thenext">the NEXT.</span></p>
+
+            <div class="member6">
+                <div class="memberI memberI6"><img src="./image/member/member-06.svg" alt="태연"></div>
             </div>
 
-            <!-- 원들 -->
-            <div class="deco-circles-container">
-                <div class="deco-circles deco-circles-01"></div>
-                <div class="deco-circles deco-circles-02"></div>
-                <div class="deco-circles deco-circles-03"></div>
-                <div class="deco-circles deco-circles-04"></div>
-                <div class="deco-circles deco-circles-05"></div>
-                <div class="deco-circles deco-circles-06"></div>
-                <div class="deco-circles deco-circles-07"></div>
-                <div class="deco-circles deco-circles-08"></div>
+            <div class="member7">
+                <div class="memberI memberI7"><img src="./image/member/member-07.svg" alt="수현"></div>
             </div>
 
-            <!-- 사진 -->
-            <div class="members-container">
-                <div class="member member1"><img src="./image/member/member-01.svg" alt="지현"></div>
-                <div class="member member2"><img src="./image/member/member-02.svg" alt="혜원"></div>
-                <div class="member member3"><img src="./image/member/member-03.svg" alt="하영"></div>
-                <div class="member member4"><img src="./image/member/member-04.svg" alt="수빈"></div>
-                <div class="member member5"><img src="./image/member/member-05.svg" alt="경민"></div>
-                <div class="member member6"><img src="./image/member/member-06.svg" alt="태연"></div>
-                <div class="member member7"><img src="./image/member/member-07.svg" alt="수현"></div>
-                <div class="member member8"><img src="./image/member/member-08.svg" alt="상연"></div>
-                <div class="member member9"><img src="./image/member/member-09.svg" alt="다경"></div>
-                <div class="member member10"><img src="./image/member/member-10.svg" alt="시후"></div>
-                <div class="member member11"><img src="./image/member/member-11.svg" alt="신입생"></div>
+            <div class="member8">
+                <div class="memberI memberI8"><img src="./image/member/member-08.svg" alt="상연"></div>
             </div>
 
-            <!-- 멘트 -->
-            <div class="member-texts">
-                <div class="memberText memberT1">
-                    <p>따뜻하고 즐겁고<br>가족같은 MSG에서 <br>함께해요~ :D</p>
-                </div>
-                <div class="memberText memberT2">
-                    <p>미림에서의 킥은<br>동아리 활동이거등요~<br>조금 더 발전하고 싶은 의지가 <br> 있으신 분이라면 <br> <span class="highlight">지금 바로
-                            MSG로!!</span></p>
-                </div>
-                <div class="memberText memberT3">
-                    <p>편하고, <br>성장하고 싶은 동아리를 찾고있나요? <br>그럼 우리 MSG가 딱이에요! <br>3년동안 같이 성장하고 <br>좋은 추억 만들어봐요😊</p>
-                </div>
-                <div class="memberText memberT4">
-                    <p>늦을 때가 진짜 너무 늦었다. <br>그러니 지금 빨리 지원해라</p>
-                </div>
-                <div class="memberText memberT5">
-                    <p>끌리는 직감을 믿고 <br>지원하세영 ㅎㅎ</p>
-                </div>
-                <div class="memberText memberT6">
-                    <p>다 같이 재밌게 <br> 동아리 활동해요~! :&#41;</p>
-                </div>
-                <div class="memberText memberT7">
-                    <p>MSG 지원에 대해 고민하고 있다면?! <br>M : 망설이지 말고 <br>S : 신속하게 <br>G : 지원하세요! <br>함께 즐거운 MSG 생활 해봐요!</p>
-                </div>
-                <div class="memberText memberT8">
-                    <p>저희와 함께 도전하고<br>경험하며 같이 성장해봐요!</p>
-                </div>
-                <div class="memberText memberT9">
-                    <p>저희 동아리 MSG는<br>항상 밝고 따뜻한 분위기 속에서<br>서로 친하게 지내요 <br>모르는 게 생기면 언제든 편하게 물어보세요! <br>앞으로 잘 지내봅시다~</p>
-                </div>
-                <div class="memberText memberT10">
-                    <p>와.. MSG같은 동아리 진짜<br>찾기 힘든데..<br>얼른 지원해야겠다~</p>
-                </div>
+            <div class="member9">
+                <div class="memberI memberI9"><img src="./image/member/member-09.svg" alt="다경"></div>
             </div>
 
-            <!-- 이름, 전공 -->
-            <div class="members-names">
-                <div class="membername memberN1"><span class="major">소프트웨어과</span> <br> <span class="name">백지현</span>
-                </div>
-                <div class="membername memberN2"><span class="major">소프트웨어과</span> <br> <span class="name">양혜원</span>
-                </div>
-                <div class="membername memberN3"><span class="major">소프트웨어과</span> <br> <span class="name">장하영</span>
-                </div>
-                <div class="membername memberN4"><span class="major">소프트웨어과</span> <br> <span class="name">조수빈</span>
-                </div>
-                <div class="membername memberN5"><span class="major">디자인과</span> <br> <span class="name">탁경민</span>
-                </div>
-                <div class="membername memberN6"><span class="major">소프트웨어과</span> <br> <span class="name">기태연</span>
-                </div>
-                <div class="membername memberN7"><span class="major">디자인과</span> <br> <span class="name">이수현</span>
-                </div>
-                <div class="membername memberN8"><span class="major">소프트웨어과</span> <br> <span class="name">이상연</span>
-                </div>
-                <div class="membername memberN9"><span class="major">소프트웨어과</span> <br> <span class="name">윤다경</span>
-                </div>
-                <div class="membername memberN10"><span class="major">소프트웨어과</span> <br> <span class="name">장시후</span>
-                </div>
+            <div class="member10">
+                <div class="memberI memberI10"><img src="./image/member/member-10.svg" alt="시후"></div>
             </div>
-        </section>
 
-        
-    </div>
+            <div class="member11">
+                <div class="memberI memberI11"><img src="./image/member/member-11.svg" alt="신입생"></div>
+                <div id="sixteen"><p>NOW, <br>You are <span class="thenext">the NEXT</span>.</p></div>
+            </div>
+        </div>
+
+        <div class="deco-circles-01"><img src="./image/member/deco-circles.svg" alt="원장식"></div>
+
+        </main>
     <footer>
         <div class="footer-menu">
             <ul>
                 <li>
-                    <a href="./MSG.html" class="">MSG 소개</a>
-                    <a href="./project.html" class="">프로젝트</a>
-                    <a href="./activity.html" class="">활동</a>
-                    <a href="./member.html" class="">부원</a>
-                    <a href="./FAQ.html" class="">F A Q</a>
+                    <a href="./MSG.html" class="footer-menu-item">MSG 소개</a>
+                    <a href="./project.html" class="footer-menu-item">프로젝트</a>
+                    <a href="./activity.html" class="footer-menu-item">활동</a>
+                    <a href="./member.html" class="footer-menu-item">부원</a>
+                    <a href="./FAQ.html" class="footer-menu-item">F A Q</a>
                 </li>
             </ul>
         </div>
         <div class="footer-connect">
-            <a class="instagram" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a>010-0000-0000
+            <a class="president" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a>010-0000-0000
             <br>
-            <a class="instagram" href="https://www.instagram.com/slee_0115/">15기 부장 이상연</a>010-0000-0000
+            <a class="president" href="https://www.instagram.com/hy_____120/">15기 부장 이상연</a>010-0000-0000
         </div>
         <div class="footer-instagram">
             <img src="../image/instagram.svg" alt="인스타그램">
@@ -157,6 +147,9 @@
             COPYRIGHT ⓒ MSG. ALL RIGHTS RESERVED
         </div>
     </footer>
-</body>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/msg.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
