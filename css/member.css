@@ -1,457 +1,332 @@
-/* 기본적인 여백 제거 */
-header {
-  font-family: 'Pretendard';
-  font-weight: 600;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  transform: translateY(0);
-  background-color: white;
-}
-
-/* 부원 */
-#title {
-  position: absolute;
-  width: 109px;
-  height: 60px;
-  left: 230px;
-  top: 250px;
-
-  font-family: "KBO-Dia-Gothic";
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 60px;
-
-  color: #424242;
-}
-
-/* 16기와 함께할 선배들이에요! <3 */
-#sub {
-  position: absolute;
-  width: 361px;
-  height: 33px;
-  left: 230px;
-  top: 345px;
-
-  font-family: "Pretendard";
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
-
-  color: #9e9e9e;
-}
-
-/* 14기 */
-#fourteen {
-  position: absolute;
-  width: 71px;
-  height: 43px;
-  left: 230px;
-  top: 410px;
-
-  font-family: "Pretendard";
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-
-  color: #757575;
-}
-
-/* 15기 */
-#fifteen {
-  position: absolute;
-  width: 70px;
-  height: 43px;
-  left: 230px;
-  top: 2910px;
-
-  font-family: "Pretendard";
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-
-  color: #757575;
-}
-
-/* Now, You are the Next */
-#sixteen {
-  position: absolute;
-  width: 729px;
-  height: 224px;
-  left: calc(50% - 729px / 2 - 4.5px);
-  top: 5805px;
-
-  font-family: 'KBO-Dia-Gothic';
-  font-weight: 500;
-  font-size: 80px;
-  line-height: 112px;
-  text-align: center;
-
-  color: #000000;
-}
-
-.header-menu {
-  font-family: 'Pretendard';
-  font-weight: 600;
-}
-
-body,
-html {
-  font-family: 'Pretendard';
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-section,
-.wrapper {
-  flex: 1;
-  min-height: 100%;
-  overflow: visible;
-  /* 원들이 잘리지 않도록 설정 */
-}
-
-footer {
-  font-family: 'Pretendard';
-  flex-shrink: 0;
+body {
+  overflow-x: hidden;
   width: 100%;
-  padding: 0 14.25em;
-  margin-top: auto;
-  transform: translateY(980%);
+  max-width: 100vw;
 }
 
-/* 원들 설정 */
-.deco-circles {
-  position: absolute !important;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 0.4px solid;
-  z-index: -1;
+.main {
+  min-height: 100vh;
+  padding-bottom: 60vh; /* footer와 sixteen 사이 공간 추가 */
 }
 
-/* 원들의 크기와 색상 설정 */
-.deco-circles-01 {
-  width: 1057px;
-  height: 1057px;
-  left: 172px;
-  top: 790px;
-  border-color: #59f9cd;
+.deco-circles img {
+  position: absolute;
+  top: 80vh;  /* 원하는 위치로 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;  /* 적절한 크기 조정 */
+  max-width: 100vw;
 }
 
-.deco-circles-02 {
-  width: 1641px;
-  height: 1641px;
-  left: -120px;
-  top: 510px;
-  border-color: #59f9cd;
-}
 
-.deco-circles-03 {
-  width: 1057px;
-  height: 1057px;
-  left: 871px;
-  top: 1740px;
-  border-color: #1bf48b;
-}
+#title p { font-family: "KBO-Dia-Gothic"; font-weight: 500; color: #424242;}
 
-.deco-circles-04 {
-  width: 1641px;
-  height: 1641px;
-  left: 579px;
-  top: 1450px;
-  border-color: #1bf48b;
-}
+#sub p{ font-family: "Pretendard"; font-weight: 600; color: #9e9e9e;}
 
-.deco-circles-05 {
-  width: 1057px;
-  height: 1057px;
-  left: 400px;
-  top: 2940px;
-  border-color: #59f9cd;
-  transform: scaleX(-1);
-}
+#fourteen p, #fifteen p { font-family: "Pretendard"; font-weight: 600; color: #757575;}
 
-.deco-circles-06 {
-  width: 1641px;
-  height: 1641px;
-  left: 100px;
-  top: 2650px;
-  border-color: #59f9cd;
-  transform: scaleX(-1);
-}
+#sixteen p { font-family: 'KBO-Dia-Gothic'; font-weight: 500; }
 
-.deco-circles-07 {
-  width: 1057px;
-  height: 1057px;
-  left: 30px;
-  top: 4210px;
-  border-color: #1bf48b;
-  transform: scaleX(-1);
-}
+.memberT { font-family: 'Pretendard'; font-weight: 600;}
 
-.deco-circles-08 {
-  width: 1641px;
-  height: 1641px;
-  left: -270px;
-  top: 3920px;
-  border-color: #1bf48b;
-  transform: scaleX(-1);
-}
+.memberN { font-family: 'Pretendard'; font-weight: 600;}
 
-/* 멤버들 설정 */
-.member {
+.major { font-family: 'Pretendard'; font-weight: 500;}
+
+.memberN, .major{ font-size: 1vw;}
+
+#title p {
   position: relative;
+  width: 15%;
+  margin-left: 14%;
+  margin-top: 16vh; 
+  font-size: clamp(30px, 3.5vw, 3.5vw); 
+  line-height: 5vw;
+}
+
+#sub p {
+  position: absolute;
   width: 100%;
-  height: 425.21px;
+  margin-left: 14%; 
+  margin-top: 3vh;
+  font-size: clamp(18px, 2vw, 2vw);
+  line-height: 3vw; 
+}
+
+#fourteen p, #fifteen p {
+  position: absolute;
+  width: 10%;
+  margin-left: 14%; 
+  font-size: clamp(18px, 2vw, 2vw);  
+  line-height: 3.5vw;
+}
+
+#fourteen p {
+  margin-top: 15vh; 
+}
+
+#fifteen p {
+  margin-top: 20vh; 
+}
+
+#sixteen p{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-left: 1vw;
+  margin-top: 18vh;
+  font-size: clamp(30px, 5vw, 5vw);
+}
+
+.memberI {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 5vw;
+  padding: 6vw;
+}
+
+.memberI img {
+  width: 28vw;
+  max-height: 80vh;
+  object-fit: cover;
   z-index: 2;
+  min-width: 5vw;
 }
 
-.member1 {
-  position: absolute;
-  left: 10vw;
-  top: 71vh;
+.memberI1 {
+  margin-left: -27vw;
+  margin-top: 34vh;
 }
 
-.member2 {
-  position: absolute;
-  left: 48vw;
-  top: 141vh;
+.memberI2 {
+  margin-left: 21vw;
+  margin-top: 0vh;
 }
 
-.member3 {
-  position: absolute;
-  left: 10vw;
-  top: 191vh;
+.memberI3 {
+  margin-left: -28vw;
+  margin-top: -2vh;
 }
 
-.member4 {
-  position: absolute;
-  left: 58vw;
-  top: 256vh;
+.memberI4 {
+  margin-left: 24vw;
+  margin-top: -5vh;
 }
 
-.member5 {
-  position: absolute;
-  left: 15vw;
-  top: 331vh;
+.memberI5 {
+  margin-left: -10vw;
+  margin-top: 0vh;
 }
 
-.member6 {
-  position: absolute;
-  left: 50vw;
-  top: 406vh;
+.memberI6 {
+  margin-left: 15vw;
+  margin-top: 35vh;
 }
 
-.member7 {
-  position: absolute;
-  left: 8vw;
-  top: 481vh;
+.memberI7 {
+  margin-left: -25vw;
+  margin-top: -5vh;
 }
 
-.member8 {
-  position: absolute;
-  left: 55vw;
-  top: 526vh;
+.memberI8 {
+  margin-left: 16vw;
+  margin-top: -5vh;
 }
 
-.member9 {
-  position: absolute;
-  left: 9vw;
-  top: 591vh;
+.memberI9 {
+  margin-left: -26vw;
+  margin-top: -10vh;
 }
 
-.member10 {
-  position: absolute;
-  left: 50vw;
-  top: 671vh;
+.memberI10 {
+  margin-left: 16vw;
+  margin-top: -5vh;
 }
 
-.member11 {
-  position: absolute;
-  left: 30vw;
-  top: 731vh;
+.memberI11 {
+  margin-left: -10vw;
+  margin-top: 5vh;
 }
 
-/* 텍스트 설정 */
-.memberText {
-  position: absolute;
-  font-family: 'Pretendard';
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 39px;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  z-index: 3;
+.member1 img {
+  width: 28vw;
+  max-height: 80vh;
 }
 
-/* 멤버 텍스트 위치 */
-.memberT1 {
-  width: 251.94px;
-  height: 143.4px;
-  left: 320px;
-  top: 750px;
-  font-size: 32px;
-  line-height: 48px;
+.member2 img {
+  width: 35vw;
+  max-height: 80vh;
 }
 
-.memberT2 {
-  width: 322.36px;
-  height: 209.5px;
-  left: 960px;
-  top: 1055px;
+.member3 img {
+  width: 30vw;
+  max-height: 80vh;
 }
 
-.memberT3 {
-  width: 408.42px;
-  height: 196px;
-  left: 290px;
-  top: 1600px;
+.member4 img {
+  width: 28vw;
+  max-height: 80vh;
 }
 
-.memberT4 {
-  width: 350px;
-  height: 96px;
-  left: 950px;
-  top: 2130px;
-  font-size: 32px;
-  line-height: 48px;
+.member5 img {
+  width: 35vw;
+  max-height: 80vh;
 }
 
-.memberT5 {
-  width: 300px;
-  height: 101px;
-  left: 485px;
-  top: 2500px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 50px;
+.member6 img {
+  width: 27vw;
+  max-height: 80vh;
 }
 
-.memberT6 {
-  width: 340px;
-  height: 101px;
-  left: 940px;
-  top: 3220px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 50px;
+.member7 img {
+  width: 40vw;
+  max-height: 80vh;
 }
 
-.memberT7 {
-  width: 419px;
-  height: 196px;
-  left: 260px;
-  top: 3545px;
+.member8 img {
+  width: 27vw;
+  max-height:80vh;
 }
 
-.memberT8 {
-  width: 329px;
-  height: 96px;
-  left: 985px;
-  top: 4095px;
-  font-size: 32px;
-  line-height: 48px;
+.member9 img {
+  width: 35vw;
+  max-height: 80vh;
 }
 
-.memberT9 {
-  width: 484px;
-  height: 196px;
-  left: 175px;
-  top: 4520px;
+.member10 img {
+  width: 38vw;
+  max-height:80vh;
 }
 
-.memberT10 {
-  width: 340px;
-  height: 144px;
-  left: 1000px;
-  top: 4955px;
-  font-size: 32px;
-  line-height: 48px;
+.member11 img {
+  width: 34vw;
+  max-height: 80vh;
 }
 
-/* 멤버 이름 텍스트 설정 */
-.membername {
-  position: absolute;
-  width: 103.81px;
-  height: 64.88px;
-  font-family: 'Pretendard';
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #757575;
+.thenext {color: #59f9cd;}
+
+@media screen and (max-width: 768px) {
+  .member1 img { content: url("../image/member/member-1.svg"); }
+  .member2 img { content: url("../image/member/member-2.svg"); }
+  .member3 img { content: url("../image/member/member-3.svg"); }
+  .member4 img { content: url("../image/member/member-4.svg"); }
+  .member5 img { content: url("../image/member/member-5.svg"); }
+  .member6 img { content: url("../image/member/member-6.svg"); }
+  .member7 img { content: url("../image/member/member-7.svg"); }
+  .member8 img { content: url("../image/member/member-8.svg"); }
+  .member9 img { content: url("../image/member/member-9.svg"); }
+  .member10 img { content: url("../image/member/member-10-2.svg"); }
 }
 
-.memberN1 {
-  top: 580px;
-  left: 460px;
+@media screen and (max-width: 768px) {
+  .memberI { gap: 5vw; padding: 6vw; }
+  header { position: fixed ;}  
 }
 
-.memberN2 {
-  top: 1083px;
-  left: 750px;
-}
 
-.memberN3 {
-  top: 1465px;
-  left: 445px;
-}
+/* 모바일 버전!! */
 
-.memberN4 {
-  top: 1940px;
-  left: 1025px;
-}
+@media screen and (max-width: 400px) {
+  .main {
+    padding-bottom: 30vh; /* footer와 sixteen 사이 공간 더 줄임 */
+  }
 
-.memberN5 {
-  top: 2455px;
-  left: 235px;
-}
+  header { position: fixed ;}
 
-.memberN6 {
-  top: 3030px;
-  left: 990px;
-}
+  #title p { margin-top: 9vh; }
 
-.memberN7 {
-  top: 3710px;
-  left: 740px;
-}
+  #fifteen p { margin-top: 10vh; }
 
-.memberN8 {
-  top: 3910px;
-  left: 1045px;
-}
+  #sixteen p { margin-top: 8vh; margin-bottom: 1vh;}
 
-.memberN9 {
-  top: 4385px;
-  left: 350px;
-}
+  .memberI {
+    gap: 25vw;
+    padding: 20vw;
+  }
 
-.memberN10 {
-  top: 5095px;
-  left: 780px;
-}
+  .memberI img {
+    width: 55vw; /* 모바일에서 이미지 크기 더 확대 */
+    max-width: 100vw;
+    height: auto;
+    margin-left: -20vw;
+  }
 
-.memberN11 {
-  top: 5387px;
-  left: 498px;
-}
+  .memberI1 img{
+    width: 53vw;
+    margin-left: -20vw;
+    margin-top: -20vh;
+  }
 
-/* 강조 텍스트 */
-.highlight {
-  font-size: 36px;
-  line-height: 50.4px;
-}
+  .memberI2 img{
+    width: 70vw;
+    margin-left: -55vw;
+    margin-top: -18vw;
+  }
 
-/* 기타 기본 스타일 */
-.name {
-  font-size: 32px;
-  line-height: 38px;
-  font-weight: 500;
-}
+  .memberI3 img{
+    width: 55vw;
+    margin-left: -20vw;
+    margin-top: -16vw;
+  }
 
-.thenext {
-  color: #59f9cd;
+  .memberI4 img{
+    width: 55vw;
+    margin-left: -50vw;
+    margin-top: -15vw;
+  }
+
+  .memberI5 img{
+    width: 70vw;
+    margin-left: -30vw;
+    margin-top: -10vw;
+  }
+
+  .memberI6 img{
+    width: 57vw;
+    margin-left: -50vw;
+    margin-top: -20vh;
+  }
+
+  .memberI7 img{
+    width: 80vw;
+    margin-left: 0vw;
+    margin-top: -5vw;
+  }
+
+  .memberI8 img{
+    width: 60vw;
+    margin-left: -55vw;
+    margin-top: -5vw;
+  }
+
+  .memberI9 img{
+    width: 65vw;
+    margin-left: -0vw;
+    margin-top: 0vw;
+  }
+
+  .memberI10 img{
+    width: 80vw;
+    margin-left: -70vw;
+    margin-top: -5vw;
+  }
+
+  .memberI11 img{
+    width: 70vw;
+  }
+
+  .deco-circles-01 img {
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw; /* 전체 화면 너비와 동일한 비율 유지 */
+    height: 200vh; /* 전체 화면 높이와 동일한 비율 유지 */
+    max-width: 200vw;
+    max-height: 200vh;
+    opacity: 0.3;
+    z-index: 4;
+  }
 }
