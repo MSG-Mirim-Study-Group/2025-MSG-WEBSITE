@@ -107,12 +107,14 @@ div>h1 {
 .faq-question {
     text-decoration-color: #BDBDBD;
     width: 89%;
+    /*이거 줄이기기*/
     margin: 0 auto;
     display: block;
     align-items: center;
     background-color: #EEEEEE;
     border: none;
     padding: 30px;
+    /*두께...*/
     text-align: left;
     font-size: 16px;
     cursor: pointer;
@@ -326,4 +328,111 @@ footer {
     font-size: 0.7em;
     color: #FFFFFFDE;
     height: 0px;
+}
+
+
+/* 태블릿 및 모바일 버전 */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .floating {
+        display: none;
+    }
+
+    div>h1 {
+        width: 272.79913330078125;
+        height: 18;
+        top: 100px;
+        left: 33.74px;
+        font-weight: 600;
+        font-size: 14.68px;
+    }
+
+    .faq-item {
+        width: 310px;
+    }
+
+    .faq-question {
+        width: 310;
+        height: 25.94814682006836;
+        top: 262.5px;
+        left: 33.38px;
+    }
+
+    .faq-answer {
+        width: 310;
+        font-size: 8px;
+    }
+
+    .footer-menu {
+        padding: 3vh 0;
+    }
+
+    .footer-menu a {
+        font-size: 2vh;
+        margin-top: 1.5vh;
+    }
+
+    .footer-connect {
+        font-size: 1.4vh;
+    }
+
+    .footer-connect .president::after {
+        padding: 0 6px 0 10px;
+    }
+
+    .footer-instagram {
+        font-size: 1.5vh;
+        margin: 3vh 0;
+    }
+
+    .footer-instagram img {
+        width: 2vh;
+        margin-right: 1.5vw;
+    }
+
+    .footer-copyright {
+        font-size: 1vh;
+    }
+
+    /* 첫 번째 원 (왼쪽 상단) */
+    .background-circle1 {
+        width: 110.01532488053428;
+        height: 110.01532488053428;
+        top: 168.49px;
+        left: -78px;
+        opacity: 0.8;
+    }
+
+    /* 두 번째 원 (오른쪽 중간) */
+    .background-circle2 {
+        width: 55.06458535153346;
+        height: 55.06458535153346;
+        top: 339.36px;
+        left: 358.62px;
+        opacity: 0.8;
+    }
+
+    /* 세 번째 원 (왼쪽 하단) */
+    .background-circle3 {
+        width: 45.450715480076035;
+        height: 41.11713951089666;
+        top: 418.41px;
+        left: 11.29px;
+    }
+
+    /* 네 번째 원 (오른쪽 하단) */
+    .background-circle4 {
+        width: 55.06458535153346;
+        height: 55.06458535153346;
+        top: 491.02px;
+        left: 309.75px;
+        opacity: 0.8;
+    }
 }
