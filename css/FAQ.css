@@ -69,7 +69,6 @@ header {
     font-weight: bold;
 }
 
-
 /* 메인 */
 main {
     width: 100%;
@@ -121,6 +120,17 @@ div>h1 {
     outline: none;
 }
 
+.faq-question::after {
+    content: url(/2025-MSG-WEBSITE/image/project/toggle.png);
+    position: absolute;
+    right: 250px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
 .faq-question span {
     color: #757575;
     word-spacing: 5px;
@@ -150,7 +160,7 @@ div>h1 {
 .faq-answer>p {
     color: #424242;
     text-align: left;
-    margin-top: -48px;
+    margin-top: -51px;
     margin-left: 70px;
 }
 
@@ -181,6 +191,22 @@ div>h1 {
     margin-bottom: 500px;
 }
 
+.faq-question-last::after {
+    content: url(/2025-MSG-WEBSITE/image/project/toggle.png);
+    position: absolute;
+    right: 250px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
+.faq-question-last span {
+    color: #757575;
+    word-spacing: 5px;
+}
+
 .background {
     width: 100%;
     position: absolute;
@@ -194,7 +220,7 @@ div>h1 {
 
 /* 첫 번째 원 (왼쪽 상단) */
 .background-circle1 {
-    background-image: url('/images/deco-circle-01.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-01.png');
     width: 400px;
     height: 400px;
     top: 250px;
@@ -203,7 +229,7 @@ div>h1 {
 
 /* 두 번째 원 (오른쪽 중간) */
 .background-circle2 {
-    background-image: url('/images/deco-circle-02.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-02.png');
     width: 240px;
     height: 240px;
     top: 600px;
@@ -212,7 +238,7 @@ div>h1 {
 
 /* 세 번째 원 (왼쪽 하단) */
 .background-circle3 {
-    background-image: url('/images/deco-circle-03.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-03.png');
     width: 240px;
     height: 240px;
     bottom: -520px;
@@ -221,13 +247,12 @@ div>h1 {
 
 /* 네 번째 원 (오른쪽 하단) */
 .background-circle4 {
-    background-image: url('/images/deco-circle-04.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-04.png');
     width: 240px;
     height: 240px;
     bottom: -680px;
     right: 70px;
 }
-
 
 /*푸터*/
 footer {
