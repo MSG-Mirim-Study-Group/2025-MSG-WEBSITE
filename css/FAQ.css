@@ -403,6 +403,7 @@ footer {
 
     /* 첫 번째 원 (왼쪽 상단) */
     .background-circle1 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-05.png);
         width: 110.01532488053428;
         height: 110.01532488053428;
         top: 168.49px;
@@ -412,6 +413,7 @@ footer {
 
     /* 두 번째 원 (오른쪽 중간) */
     .background-circle2 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-06.png);
         width: 55.06458535153346;
         height: 55.06458535153346;
         top: 339.36px;
@@ -421,6 +423,7 @@ footer {
 
     /* 세 번째 원 (왼쪽 하단) */
     .background-circle3 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-07.png);
         width: 45.450715480076035;
         height: 41.11713951089666;
         top: 418.41px;
@@ -429,6 +432,7 @@ footer {
 
     /* 네 번째 원 (오른쪽 하단) */
     .background-circle4 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-08.png);
         width: 55.06458535153346;
         height: 55.06458535153346;
         top: 491.02px;
