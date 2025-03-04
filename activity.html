@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/activity.css">
 </head>
+
 <body>
     <header>
         <img src="./image/logo.svg" class="header-logo" alt="로고">
@@ -35,24 +37,40 @@
             <div class="Gather">Gather</div>
         </div>
 
-        <p class="active">활동</p>
-        <div class="activity-container">
-            <div class="box make">
-                <p class="M">MAKE</p>
-                <p class="DetailM">프로젝트<br>공모전<br>IT 쇼</p>
-                <p class="BigM">M</p>
+        <section class="activity-section">
+            <p class="active">활동</p>
+            <div class="activity">
+                <!-- M 카드 -->
+                <div class="card" id="make">
+                    <div class="content">
+                        <span class="title">MAKE</span>
+                        <span class="description">프로젝트</span>
+                        <span class="description">공모전</span>
+                        <span class="description">IT 쇼</span>
+                    </div>
+                    <div class="Big">M</div>
+                </div>
+
+                <!-- S 카드 -->
+                <div class="card" id="share">
+                    <div class="content">
+                        <span class="title">SHARE</span>
+                        <span class="description">스터디</span>
+                        <span class="description">개발 블로그</span>
+                    </div>
+                    <div class="Big">S</div>
+                </div>
+
+                <!-- G 카드 -->
+                <div class="card" id="gather">
+                    <div class="content">
+                        <span class="title">GATHER</span>
+                        <span class="description">회고</span>
+                    </div>
+                    <div class="Big">G</div>
+                </div>
             </div>
-            <div class="box share">
-                <!-- <p class="S">SHARE</p> -->
-                <!-- <p class="DetailS">스터디<br>개발 블로그</p> -->
-                <p class="BigS">S</p>
-            </div>
-            <div class="box gather">
-                <!-- <p class="G">GATHER</p>
-                <p class="DetailG">회고</p> -->
-                <p class="BigG">G</p>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -81,4 +99,5 @@
         </div>
     </footer>
 </body>
+
 </html>

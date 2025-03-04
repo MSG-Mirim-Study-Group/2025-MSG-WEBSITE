@@ -1,4 +1,218 @@
-@media (max-width: 768px) {
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+
+.main {
+  min-height: 100vh;
+  padding-bottom: 60vh; /* footer와 sixteen 사이 공간 추가 */
+}
+
+.deco-circles img {
+  position: absolute;
+  top: 80vh;  /* 원하는 위치로 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;  /* 적절한 크기 조정 */
+  max-width: 100vw;
+}
+
+.deco-circles-01 img{
+  display: none;
+}
+
+
+#title p { font-family: "KBO-Dia-Gothic"; font-weight: 500; color: #424242;}
+
+#sub p{ font-family: "Pretendard"; font-weight: 600; color: #9e9e9e;}
+
+#fourteen p, #fifteen p { font-family: "Pretendard"; font-weight: 600; color: #757575;}
+
+#sixteen p { font-family: 'KBO-Dia-Gothic'; font-weight: 500; }
+
+.memberT { font-family: 'Pretendard'; font-weight: 600;}
+
+.memberN { font-family: 'Pretendard'; font-weight: 600;}
+
+.major { font-family: 'Pretendard'; font-weight: 500;}
+
+.memberN, .major{ font-size: 1vw;}
+
+#title p {
+  position: relative;
+  width: 15%;
+  margin-left: 14%;
+  margin-top: 16vh; 
+  font-size: clamp(30px, 3.5vw, 3.5vw); 
+  line-height: 5vw;
+}
+
+#sub p {
+  position: absolute;
+  width: 100%;
+  margin-left: 14%; 
+  margin-top: 3vh;
+  font-size: clamp(18px, 2vw, 2vw);
+  line-height: 3vw; 
+}
+
+#fourteen p, #fifteen p {
+  position: absolute;
+  width: 10%;
+  margin-left: 14%; 
+  font-size: clamp(18px, 2vw, 2vw);  
+  line-height: 3.5vw;
+}
+
+#fourteen p {
+  margin-top: 15vh; 
+}
+
+#fifteen p {
+  margin-top: 20vh; 
+}
+
+#sixteen p{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-left: 1vw;
+  margin-top: 18vh;
+  font-size: clamp(30px, 5vw, 5vw);
+}
+
+.memberI {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 5vw;
+  padding: 6vw;
+}
+
+.memberI img {
+  width: 28vw;
+  max-height: 80vh;
+  object-fit: cover;
+  z-index: 2;
+  min-width: 5vw;
+}
+
+.memberI1 {
+  margin-left: -27vw;
+  margin-top: 34vh;
+}
+
+.memberI2 {
+  margin-left: 21vw;
+  margin-top: -10vh;
+}
+
+.memberI3 {
+  margin-left: -28vw;
+  margin-top: -9vh;
+}
+
+.memberI4 {
+  margin-left: 24vw;
+  margin-top: -15vh;
+}
+
+.memberI5 {
+  margin-left: -10vw;
+  margin-top: -10vh;
+}
+
+.memberI6 {
+  margin-left: 15vw;
+  margin-top: 35vh;
+}
+
+.memberI7 {
+  margin-left: -25vw;
+  margin-top: -5vh;
+}
+
+.memberI8 {
+  margin-left: 16vw;
+  margin-top: -15vh;
+}
+
+.memberI9 {
+  margin-left: -26vw;
+  margin-top: -20vh;
+}
+
+.memberI10 {
+  margin-left: 16vw;
+  margin-top: -15vh;
+}
+
+.memberI11 {
+  margin-left: -10vw;
+  margin-top: 5vh;
+}
+
+.member1 img {
+  width: 28vw;
+  max-height: 80vh;
+}
+
+.member2 img {
+  width: 35vw;
+  max-height: 80vh;
+}
+
+.member3 img {
+  width: 30vw;
+  max-height: 80vh;
+}
+
+.member4 img {
+  width: 28vw;
+  max-height: 80vh;
+}
+
+.member5 img {
+  width: 35vw;
+  max-height: 80vh;
+}
+
+.member6 img {
+  width: 27vw;
+  max-height: 80vh;
+}
+
+.member7 img {
+  width: 40vw;
+  max-height: 80vh;
+}
+
+.member8 img {
+  width: 27vw;
+  max-height:80vh;
+}
+
+.member9 img {
+  width: 35vw;
+  max-height: 80vh;
+}
+
+.member10 img {
+  width: 38vw;
+  max-height:80vh;
+}
+
+.member11 img {
+  width: 34vw;
+  max-height: 80vh;
+}
+
+.thenext {color: #59f9cd;}
+
+@media screen and (max-width: 768px) {
   .member1 img { content: url("../image/member/member-1.svg"); }
   .member2 img { content: url("../image/member/member-2.svg"); }
   .member3 img { content: url("../image/member/member-3.svg"); }
@@ -10,352 +224,159 @@
   .member9 img { content: url("../image/member/member-9.svg"); }
   .member10 img { content: url("../image/member/member-10-2.svg"); }
 }
-@media (max-width: 768px) {
 
-  /* 📌 전체 컨테이너 여백 조정 */
-  .container {
-      max-width: 95vw;
-      margin: 0 auto;
-      padding: 0 10px;
+@media screen and (max-width: 768px) {
+  .memberI { gap: 5vw; padding: 6vw; }
+  header { position: fixed ;}  
+}
+
+
+/* 모바일 버전!! */
+
+@media screen and (max-width: 400px) {
+  .main {
+    padding-bottom: 30vh; /* footer와 sixteen 사이 공간 더 줄임 */
   }
 
-  /* 📌 이미지 크기 유지 */
-  .member img {
-      width: 40vw !important;
-      height: auto;
-      max-height: 50vh !important;
+  html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.header-menu {
+  max-width: 90vw; /* 너무 커서 넘치는 것 방지 */
+}
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5vw;
+    transform: translateY(-50%);
+    width: 6vh; /* 버튼 크기 조정 */
+    height: auto;
+}
+
+  .header-menu {
+    max-width: 95vw;  /* 너무 꽉 차지 않도록 조정 */
+    padding: 0 3vw;   /* 좌우 여백 추가 */
   }
 
-  /* 📌 텍스트 크기 유지 */
-  #title p, #sub p, .memberText, .membername {
-      font-size: 23px !important;
-      line-height: 39px !important;
+  header {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0 3vw;
+    box-sizing: border-box;
+  } 
+
+  #title p { margin-top: 9vh; }
+
+  #fifteen p { margin-top: 10vh; }
+
+  #sixteen p { margin-top: 8vh; margin-bottom: 1vh;}
+
+  .memberI {
+    gap: 25vw;
+    padding: 20vw;
   }
 
-  /* 📌 멤버 간 간격 조정 (위아래 간격만 조절) */
-  .members-container {
-      margin-bottom: 1px; /* 이미지 사이 간격 추가 */
+  .memberI img {
+    width: 55vw; /* 모바일에서 이미지 크기 더 확대 */
+    max-width: 100vw;
+    height: auto;
+    margin-left: -20vw;
   }
 
-  /* 📌 Deco Circles 크기 유지 */
-  .deco-circles {
-      width: 500px !important;
-      height: 500px !important;
-      min-width: 500px;
-      min-height: 500px;
+  .memberI1 img{
+    width: 53vw;
+    margin-left: -20vw;
+    margin-top: -20vh;
+  }
+
+  .memberI2 img{
+    width: 70vw;
+    margin-left: -55vw;
+    margin-top: -2vw;
+  }
+
+  .memberI3 img{
+    width: 55vw;
+    margin-left: -20vw;
+    margin-top: -8vw;
+  }
+
+  .memberI4 img{
+    width: 55vw;
+    margin-left: -50vw;
+    margin-top: 5vw;
+  }
+
+  .memberI5 img{
+    width: 70vw;
+    margin-left: -30vw;
+    margin-top: 10vw;
+  }
+
+  .memberI6 img{
+    width: 57vw;
+    margin-left: -50vw;
+    margin-top: -20vh;
+  }
+
+  .memberI7 img{
+    width: 80vw;
+    margin-left: 0vw;
+    margin-top: -5vw;
+  }
+
+  .memberI8 img{
+    width: 60vw;
+    margin-left: -55vw;
+    margin-top: 5vw;
+  }
+
+  .memberI9 img{
+    width: 65vw;
+    margin-left: -0vw;
+    margin-top: 15vw;
+  }
+
+  .memberI10 img{
+    width: 80vw;
+    margin-left: -70vw;
+    margin-top: 15vw;
+  }
+
+  .memberI11 img{
+    width: 70vw;
+    margin-top: -20vw;
+  }
+
+  .deco-circles img {
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw; /* 전체 화면 너비와 동일한 비율 유지 */
+    height: 200vh; /* 전체 화면 높이와 동일한 비율 유지 */
+    max-width: 200vw;
+    max-height: 200vh;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  .deco-circles-01 img{
+    display: inline;
+    position: absolute;
+    top: 160vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw; /* 전체 화면 너비와 동일한 비율 유지 */
+    height: 200vh; /* 전체 화면 높이와 동일한 비율 유지 */
+    max-width: 200vw;
+    max-height: 200vh;
+    opacity: 0.3;
+    z-index: -1;
   }
 }
-.nav-menu { display: flex; gap: 5px;}
-
-/* 📌 body 전체 높이 유지 */
-body, html {
-  height: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* 📌 wrapper가 컨텐츠를 채우고 푸터를 밀어내도록 설정 */
-.wrapper {
-  flex: 1; /* 푸터를 밀어내기 위한 flex 설정 */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
-}
-
-/* 📌 absolute 요소들의 부모 컨테이너 높이를 확보 */
-.members-container {
-  min-height: 200vh; /* 페이지 높이를 늘려서 푸터가 정상적으로 내려가게 설정 */
-}
-
-section {
-  flex-grow: 1;
-  min-height: 200vh;
-}
-
-/* 📌 푸터 설정 */
-footer {
-  position: relative; /* 기존 translateY 제거 */
-  width: 100%;
-  margin-top: auto;
-  transform: translateY(800%); 
-}
-
-#title p { font-family: "KBO-Dia-Gothic"; font-weight: 500; color: #424242;}
-
-#sub p{ font-family: "Pretendard"; font-weight: 600; color: #9e9e9e;}
-
-#fourteen p, #fifteen p { font-family: "Pretendard"; font-weight: 600; color: #757575;}
-
-#sixteen p { font-family: 'KBO-Dia-Gothic'; font-weight: 500; }
-
-.memberText { font-family: 'Pretendard'; font-weight: 600;}
-
-.membername { font-family: 'Pretendard'; font-weight: 600;}
-
-.major { font-family: 'Pretendard'; font-weight: 500;}
-
-.membername, .major{ font-size: 1vw;}
-#title p{
-  position: absolute;
-  width: 15%;
-  left: 14%;
-  top: 25vh;
-  font-size: 3.5vw;
-  line-height: 5vw;
-}
-
-#sub p{
-  position: absolute;
-  width: 40%;
-  left: 14%;
-  top: 35vh;
-  font-size: 1.7vw;
-  line-height: 3vw;
-}
-
-#fourteen p, #fifteen p{
-  position: absolute;
-  width: 10%;
-  left: 14%;
-  font-size: 2vw;
-  line-height: 3.5vw;
-}
-
-#fourteen p { top: 45vh; }
-#fifteen p { top: 380vh; }
-
-#sixteen p{
-  text-align: center;
-  position: relative;
-  width: 50%;
-  left: 25%;
-  top: 790vh;
-  font-size: 5vw;
-}
-
-.deco-circles-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.deco-circles {
-  position: absolute;
-  border-radius: 50%;
-  border: 0.1vw solid;
-  border-color: #59f9cd;
-}
-
-.deco-circles-01 {
-  width: 65vw;
-  height: 65vw;
-  left: 10vw;
-  top: 85.15vh;
-  border-color: #59f9cd;
-}
-
-.deco-circles-02 {
-  width: 100vw;
-  height: 100vw;
-  left: -6.25vw;
-  top: 47.22vh;
-  border-color: #59f9cd;
-}
-
-.deco-circles-03 {
-  width: 65vw;
-  height: 65vw;
-  left: 48vw;
-  top: 230vh;
-  border-color: #59f9cd;
-}
-
-.deco-circles-04 {
-  width: 100vw;
-  height: 100vw;
-  left: 30.16vw;
-  top: 195vh;
-  border-color: #59f9cd;
-}
-
-.deco-circles-05 {
-  width: 65vw;
-  height: 65vw;
-  left: 20.83vw;
-  top: 385vh;
-  border-color: #59f9cd;
-  transform: scaleX(-1);
-}
-
-.deco-circles-06 {
-  width: 100vw;
-  height: 100vw;
-  left: 5.21vw;
-  top: 350vh;
-  border-color: #59f9cd;
-  transform: scaleX(-1);
-}
-
-.deco-circles-07 {
-  width: 65vw;
-  height: 65vw;
-  left: 1.56vw;
-  top: 545vh;
-  border-color: #59f9cd;
-  transform: scaleX(-1);
-}
-
-.deco-circles-08 {
-  width: 100vw;
-  height: 100vw;
-  left: -14.06vw;
-  top: 510vh;
-  border-color: #59f9cd;
-  transform: scaleX(-1);
-}
-
-.members-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5vw;
-  width: 100%;
-  padding: 3vw;
-}
-
-.member { text-align: center;}
-
-.member img { width: 100%; height: auto; object-fit: cover;}
-
-.member1 { position: absolute; left: 12vw; top: 75vh;}
-
-.member2 { position: absolute; left: 56vw; top: 141vh;}
-
-.member3 { position: absolute; left: 10vw; top: 191vh;}
-
-.member4 { position: absolute; left: 58vw; top: 256vh;}
-
-.member5 { position: absolute; left: 15vw; top: 331vh;}
-
-.member6 { position: absolute; left: 50vw; top: 406vh;}
-
-.member7 { position: absolute; left: 8vw; top: 481vh;}
-
-.member8 { position: absolute; left: 55vw; top: 526vh;}
-
-.member9 { position: absolute; left: 9vw; top: 591vh;}
-
-.member10 { position: absolute; left: 50vw; top: 671vh;}
-
-.member11 { position: absolute; left: 30vw; top: 731vh;}
-
-.member1 img{ width: 28vw; max-height: 50vh;}
-
-.member2 img{ width: 35vw; max-height: 50vh;}
-
-.member3 img{ width: 30vw; max-height: 50vh;}
-
-.member4 img{ width: 28vw; max-height: 50vh;}
-
-.member5 img{ width: 35vw; max-height: 50vh;}
-
-.member6 img{ width: 27vw; max-height: 50vh;}
-
-.member7 img{ width: 40vw; max-height: 50vh;}
-
-.member8 img{ width: 27vw; max-height: 60vh;}
-
-.member9 img{ width: 35vw; max-height: 60vh;}
-
-.member10 img{ width: 38vw; max-height: 50vh;}
-
-.member11 img{ width: 34vw; max-height: 50vh;}
-
-.memberText {
-  position: absolute;
-  font-family: 'Pretendard';
-  font-weight: 600;
-  font-size: 23px;
-  line-height: 39px;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  z-index: 3;
-  width: 30vw;
-}
-
-.memberText p{ font-family: 'Pretendard'; font-weight: 600;}
-
-.memberT1 { height: 13.28vh; left: 21vw; top: 101vh;}
-
-.memberT2 { height: 19.39vh; left: 67.5vw; top: 143vh;}
-
-.memberT3 { height: 18.15vh; left: 17vw; top: 212vh;}
-
-.memberT4 { height: 8.89vh; left: 61.5vw; top: 284vh;}
-
-.memberT5 { height: 9.35vh; left: 30vw; top: 340vh;}
-
-.memberT6 { height: 9.35vh; left: 59.5vw; top: 434vh;}
-
-.memberT7 { height: 18.15vh; left: 15vw; top: 482.5vh;}
-
-.memberT8 { height: 8.89vh; left: 63vw; top: 555vh;}
-
-.memberT9 { height: 18.15vh; left: 11vw; top: 613.5vh;}
-
-.memberT10 { height: 13.33vh; left: 63vw; top: 678vh;}
-
-.memberN1 { top: 84vh; left: 28vw;}
-
-.memberN2 { top: 148vh; left: 56.5vw;}
-
-.memberN3 { top: 200vh; left: 25vw;}
-
-.memberN4 { top: 264vh; left: 65vw;}
-
-.memberN5 { top: 337vh; left: 15vw;}
-
-.memberN6 { top: 414vh; left: 62vw;}
-
-.memberN7 { top: 502vh; left: 40.5vw;}
-
-.memberN8 { top: 534vh; left: 65vw;}
-
-.memberN9 { top:  600vh; left: 20.5vw;}
-
-.memberN10 { top: 691vh; left: 50.5vw;}
-
-.memberN11 { top: 600vh; left: 25.94vw;}
-
-.membername {
-  position: absolute;
-  width: 150px;
-  height: 64.88px;
-  font-family: 'Pretendard';
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #757575;
-}
-
-.membername p{font-family: 'Pretendard';font-weight: 600;}
-
-.highlight {font-family: 'Pretendard';font-weight: 800;}
-
-.name {
-  font-size: 1.67vw;
-  line-height: 3.52vh;
-  font-weight: 600;
-}
-
-.major {
-  font-size: 1.04vw;
-  line-height: 2.59vh;
-  font-weight: 500;
-}
-
-.thenext {color: #59f9cd;}
