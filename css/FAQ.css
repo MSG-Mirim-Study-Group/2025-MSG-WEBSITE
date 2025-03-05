@@ -187,18 +187,6 @@ div>h1 {
 
 /* 태블릿 및 모바일 버전 */
 @media screen and (max-width: 768px) {
-    .nav-menu {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .floating {
-        display: none;
-    }
-
     div>h1 {
         width: 272.79913330078125;
         height: 18;
@@ -222,37 +210,6 @@ div>h1 {
     .faq-answer {
         width: 310;
         font-size: 8px;
-    }
-
-    .footer-menu {
-        padding: 3vh 0;
-    }
-
-    .footer-menu a {
-        font-size: 2vh;
-        margin-top: 1.5vh;
-    }
-
-    .footer-connect {
-        font-size: 1.4vh;
-    }
-
-    .footer-connect .president::after {
-        padding: 0 6px 0 10px;
-    }
-
-    .footer-instagram {
-        font-size: 1.5vh;
-        margin: 3vh 0;
-    }
-
-    .footer-instagram img {
-        width: 2vh;
-        margin-right: 1.5vw;
-    }
-
-    .footer-copyright {
-        font-size: 1vh;
     }
 
     /* 첫 번째 원 (왼쪽 상단) */
