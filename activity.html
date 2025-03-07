@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,58 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/activity.css">
 </head>
+
 <body>
+    <!-- header -->
     <header>
         <img src="./image/logo.svg" class="header-logo" alt="로고">
-        <nav>
+
+        <button class="menu-toggle">
+            <img src="./image/header-button.svg" class="toggle">
+        </button>
+
+        <nav class="nav-menu">
             <ul>
                 <li>
                     <a href="./MSG.html" class="header-menu">MSG 소개</a>
-                    <a href="" class="header-menu">프로젝트</a>
+                    <a href="./project.html" class="header-menu">프로젝트</a>
                     <a href="./activity.html" class="header-menu">활동</a>
-                    <a href="" class="header-menu">부원</a>
-                    <a href="" class="header-menu">FAQ</a>
+                    <a href="./member.html" class="header-menu">부원</a>
+                    <a href="./FAQ.html" class="header-menu">FAQ</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <!-- 메뉴 페이지 -->
+    <div class="menu-page">
+        <div class="menu-header">
+            <img src="./image/logo.svg" alt="로고">
+        </div>
+        
+        <div class="menu-content">
+            <a href="./MSG.html" class="menu-item">MSG 소개</a>
+            <a href="./project.html" class="menu-item">프로젝트</a>
+            <a href="./activity.html" class="menu-item">활동</a>
+            <a href="./member.html" class="menu-item">부원</a>
+            <a href="./FAQ.html" class="menu-item">FAQ</a>
+        </div>
+        
+        <div class="menu-footer">
+            <div class="support-link">
+                <img src="./image/logo.svg" alt="logo">
+                <p>지원하러 가기</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating">
+        <img src="./image/logo.svg" alt="logo" class="floating-logo">
+        <p>지원하러 가기</p>
+    </div>
+
+    <!-- 메인 화면 -->
     <main>
         <div class="container">
             <div class="Make">Make</div>
@@ -35,46 +72,71 @@
             <div class="Gather">Gather</div>
         </div>
 
-        <p class="active">활동</p>
-        <div class="activity-container">
-            <div class="box make">
-                <p class="M">MAKE</p>
-                <p class="DetailM">프로젝트<br>공모전<br>IT 쇼</p>
-                <p class="BigM">M</p>
+        <section class="activity-section">
+            <p class="active">활동</p>
+            <div class="activity">
+                <!-- M 카드 -->
+                <div class="card" id="make">
+                    <div class="content">
+                        <span class="title">MAKE</span>
+                        <span class="description">프로젝트</span>
+                        <span class="description">공모전</span>
+                        <span class="description">IT 쇼</span>
+                    </div>
+                    <div class="Big">M</div>
+                </div>
+
+                <!-- S 카드 -->
+                <div class="card" id="share">
+                    <div class="content">
+                        <span class="title">SHARE</span>
+                        <span class="description">스터디</span>
+                        <span class="description">개발 블로그</span>
+                    </div>
+                    <div class="Big">S</div>
+                </div>
+
+                <!-- G 카드 -->
+                <div class="card" id="gather">
+                    <div class="content">
+                        <span class="title">GATHER</span>
+                        <span class="description">회고</span>
+                    </div>
+                    <div class="Big">G</div>
+                </div>
             </div>
-            <div class="box share">
-                <p class="BigS">S</p>
-            </div>
-            <div class="box gather">
-                <p class="BigG">G</p>
-            </div>
-        </div>
+        </section>
     </main>
 
+    <!-- footer -->
     <footer>
         <div class="footer-menu">
             <ul>
                 <li>
-                    <a href="./MSG.html" class="active">MSG 소개</a>
-                    <a href="" class="">프로젝트</a>
-                    <a href="" class="">활동</a>
-                    <a href="" class="">부원</a>
-                    <a href="" class="">F A Q</a>
+                    <a href="./MSG.html" class="footer-menu-item">MSG 소개</a>
+                    <a href="./project.html" class="footer-menu-item">프로젝트</a>
+                    <a href="./activity.html" class="footer-menu-item">활동</a>
+                    <a href="./member.html" class="footer-menu-item">부원</a>
+                    <a href="./FAQ.html" class="footer-menu-item">F A Q</a>
                 </li>
             </ul>
         </div>
         <div class="footer-connect">
-            <a class="instagram" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a> 010-0000-0000
+            <a class="president" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a>010-0000-0000
             <br>
-            <a class="instagram" href="https://www.instagram.com/hy_____120/">15기 부장 이상연</a> 010-0000-0000
+            <a class="president" href="https://www.instagram.com/hy_____120/">15기 부장 이상연</a>010-0000-0000
         </div>
         <div class="footer-instagram">
-            <img src="./image/instagram.svg" alt="인스타그램">
+            <img src="../image/instagram.svg" alt="인스타그램">
             <a href="https://www.instagram.com/mirim_msg/">@mirim_msg</a>
         </div>
         <div class="footer-copyright">
             COPYRIGHT ⓒ MSG. ALL RIGHTS RESERVED
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

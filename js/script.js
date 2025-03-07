@@ -63,6 +63,10 @@ function highlightCurrentPageFooterMenu() {
     });
 }
 
+function goToPage() {
+    window.location.href = "./apply.html";
+}
+
 // 페이지 메뉴 항목 하이라이팅
 highlightCurrentPageMenu();
 highlightCurrentPageFooterMenu();

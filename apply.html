@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/apply.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <img src="./image/logo.svg" class="header-logo" alt="로고">
+
+        <button class="menu-toggle">
+            <img src="./image/header-button.svg" class="toggle">
+        </button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="./MSG.html" class="header-menu">MSG 소개</a>
+                    <a href="./project.html" class="header-menu">프로젝트</a>
+                    <a href="./activity.html" class="header-menu">활동</a>
+                    <a href="./member.html" class="header-menu">부원</a>
+                    <a href="./FAQ.html" class="header-menu">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메뉴 페이지 -->
+    <div class="menu-page">
+        <div class="menu-header">
+            <img src="./image/logo.svg" alt="로고">
+        </div>
+        
+        <div class="menu-content">
+            <a href="./MSG.html" class="menu-item">MSG 소개</a>
+            <a href="./project.html" class="menu-item">프로젝트</a>
+            <a href="./activity.html" class="menu-item">활동</a>
+            <a href="./member.html" class="menu-item">부원</a>
+            <a href="./FAQ.html" class="menu-item">FAQ</a>
+        </div>
+        
+        <div class="menu-footer">
+            <div class="support-link">
+                <img src="./image/logo.svg" alt="logo">
+                <p>지원하러 가기</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 화면 -->
+    <div class="form-container" style="margin-left: 215px;">
+        <p style="color: #1BF48B; margin-right: 480px;">MSG 지원 페이지</p>
+        <h1 style="font-size: 64px; font-weight: 600;">MSG 16기 지원하기</h1>
+        <p>당신은 어떤 사람인가요?</p>
+        <p>MSG 부원이 되어야 하는 이유를 어필해주세요!<br>여러분의 소중한 답변을 기다리겠습니다. :)</p>
+        <p></p>
+        <p>*은 필수 입력사항입니다. </p>
+
+        <form>
+            <label for="student-id">학번 *</label>
+            <input type="text" id="student-id" name="student-id" placeholder="ex. 1100">
+
+            <label for="name">이름 *</label>
+            <input type="text" id="name" name="name" placeholder="ex. 김미림">
+
+            <label for="phone">전화번호 *</label>
+            <input type="text" id="phone" name="phone" placeholder="ex. 01012345678">
+
+            <label for="email">학교이메일 *</label>
+            <input type="email" id="email" name="email" placeholder="ex. s2501@e-mirim.hs.kr">
+
+            <label for="reason">MSG 지원 동기 *</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="500자 이내로 작성해주세요." style="height: 280px;"></textarea>
+
+            <label for="strength">나를 정의할 수 있는 한 마디 *</label>
+            <textarea id="strength" name="strength" rows="4" placeholder="20자 이내로 작성해주세요."></textarea>
+
+            <label for="self-introduction">자신의 강점과 단점 *</label>
+            <textarea id="self-introduction" name="self-introduction" rows="4" placeholder="500자 이내로 작성해주세요." style="height: 280px;"></textarea>
+
+            <label for="experience">실제 경험과 극복 사례 *</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="500자 이내로 작성해주세요." style="height: 280px;"></textarea>
+
+            <label for="expectation">MSG에게 궁금한 점</label>
+            <input type="text" id="expectation" name="expectation" placeholder="편하게 물어봐주세요 :)">
+
+            <input type="submit" value="제출하기">
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li>
+                    <a href="./MSG.html" class="footer-menu-item">MSG 소개</a>
+                    <a href="./project.html" class="footer-menu-item">프로젝트</a>
+                    <a href="./activity.html" class="footer-menu-item">활동</a>
+                    <a href="./member.html" class="footer-menu-item">부원</a>
+                    <a href="./FAQ.html" class="footer-menu-item">F A Q</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-connect">
+            <a class="president" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a>010-0000-0000
+            <br>
+            <a class="president" href="https://www.instagram.com/hy_____120/">15기 부장 이상연</a>010-0000-0000
+        </div>
+        <div class="footer-instagram">
+            <img src="../image/instagram.svg" alt="인스타그램">
+            <a href="https://www.instagram.com/mirim_msg/">@mirim_msg</a>
+        </div>
+        <div class="footer-copyright">
+            COPYRIGHT ⓒ MSG. ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

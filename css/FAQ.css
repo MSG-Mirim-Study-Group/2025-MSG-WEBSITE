@@ -1,75 +1,3 @@
-body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    overflow-x: hidden;
-    /* 가로 스크롤 방지 */
-    color: #424242;
-}
-
-
-/* 헤더 */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0px 40px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
-    box-shadow: 1px 1px 4px #75757514;
-    position: relative;
-}
-
-
-.logo {
-    margin-right: 100px;
-    position: absolute;
-    left: 200px;
-    top: 55%;
-    transform: translateY(-50%);
-    /* 로고를 세로 정렬 */
-}
-
-.nav {
-    display: flex;
-    margin-left: auto;
-    /* 네비게이션을 오른쪽 끝으로 이동 */
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    padding: 22px 285px 10px 286px;
-    gap: 60px;
-    opacity: 0px
-}
-
-.nav-list a {
-    size: 20px;
-    gap: 0px;
-    /*justify: space-between;*/
-    opacity: 0px;
-    text-decoration: none;
-    color: #424242;
-    font-family: Pretendard Variable;
-    font-weight: 600;
-    line-height: 23.87px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-
-.nav-list li a.highlight {
-    color: #59F9CD;
-    /* 강조된 글씨 색상 */
-    font-weight: bold;
-}
-
-
 /* 메인 */
 main {
     width: 100%;
@@ -108,17 +36,30 @@ div>h1 {
 .faq-question {
     text-decoration-color: #BDBDBD;
     width: 89%;
+    /*이거 줄이기기*/
     margin: 0 auto;
     display: block;
     align-items: center;
     background-color: #EEEEEE;
     border: none;
     padding: 30px;
+    /*두께...*/
     text-align: left;
     font-size: 16px;
     cursor: pointer;
     border-radius: 16px;
     outline: none;
+}
+
+.faq-question::after {
+    content: url(/2025-MSG-WEBSITE/image/project/toggle.png);
+    position: absolute;
+    right: 250px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
 }
 
 .faq-question span {
@@ -150,7 +91,7 @@ div>h1 {
 .faq-answer>p {
     color: #424242;
     text-align: left;
-    margin-top: -48px;
+    margin-top: -51px;
     margin-left: 70px;
 }
 
@@ -181,6 +122,22 @@ div>h1 {
     margin-bottom: 500px;
 }
 
+.faq-question-last::after {
+    content: url(/2025-MSG-WEBSITE/image/project/toggle.png);
+    position: absolute;
+    right: 250px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
+.faq-question-last span {
+    color: #757575;
+    word-spacing: 5px;
+}
+
 .background {
     width: 100%;
     position: absolute;
@@ -194,7 +151,7 @@ div>h1 {
 
 /* 첫 번째 원 (왼쪽 상단) */
 .background-circle1 {
-    background-image: url('/images/deco-circle-01.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-01.png');
     width: 400px;
     height: 400px;
     top: 250px;
@@ -203,7 +160,7 @@ div>h1 {
 
 /* 두 번째 원 (오른쪽 중간) */
 .background-circle2 {
-    background-image: url('/images/deco-circle-02.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-02.png');
     width: 240px;
     height: 240px;
     top: 600px;
@@ -212,7 +169,7 @@ div>h1 {
 
 /* 세 번째 원 (왼쪽 하단) */
 .background-circle3 {
-    background-image: url('/images/deco-circle-03.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-03.png');
     width: 240px;
     height: 240px;
     bottom: -520px;
@@ -221,84 +178,76 @@ div>h1 {
 
 /* 네 번째 원 (오른쪽 하단) */
 .background-circle4 {
-    background-image: url('/images/deco-circle-04.png');
+    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-04.png');
     width: 240px;
     height: 240px;
     bottom: -680px;
     right: 70px;
 }
 
+/* 태블릿 및 모바일 버전 */
+@media screen and (max-width: 768px) {
+    div>h1 {
+        width: 272.79913330078125;
+        height: 18;
+        top: 100px;
+        left: 33.74px;
+        font-weight: 600;
+        font-size: 14.68px;
+    }
 
-/*푸터*/
-footer {
-    background-color: #575757;
-    color: white;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-}
+    .faq-item {
+        width: 310px;
+    }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-}
+    .faq-question {
+        width: 310;
+        height: 25.94814682006836;
+        top: 262.5px;
+        left: 33.38px;
+    }
 
-.footer-links p,
-.footer-contact p {
-    text-align: left;
-    margin: 15px 250px;
-}
+    .faq-answer {
+        width: 310;
+        font-size: 8px;
+    }
 
-.footer-links span {
-    text-decoration: underline;
-}
+    /* 첫 번째 원 (왼쪽 상단) */
+    .background-circle1 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-05.png);
+        width: 110.01532488053428;
+        height: 110.01532488053428;
+        top: 168.49px;
+        left: -78px;
+        opacity: 0.8;
+    }
 
-.footer-links {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
+    /* 두 번째 원 (오른쪽 중간) */
+    .background-circle2 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-06.png);
+        width: 55.06458535153346;
+        height: 55.06458535153346;
+        top: 339.36px;
+        left: 358.62px;
+        opacity: 0.8;
+    }
 
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-}
+    /* 세 번째 원 (왼쪽 하단) */
+    .background-circle3 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-07.png);
+        width: 45.450715480076035;
+        height: 41.11713951089666;
+        top: 418.41px;
+        left: 11.29px;
+    }
 
-.footer-contact {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.footer-contact>p {
-    font-size: 0.7em;
-    line-height: 5px;
-}
-
-.footer-social img {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    position: absolute;
-    left: 268px;
-    width: 30px;
-    height: 30px;
-}
-
-.footer-social>a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.footer-social>a>p {
-    font-size: 0.8rem;
-    position: relative;
-    right: 413px;
-    top: 11px;
-}
-
-.footer-bottom>p {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 0.7em;
-    color: #FFFFFFDE;
-    height: 0px;
+    /* 네 번째 원 (오른쪽 하단) */
+    .background-circle4 {
+        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-08.png);
+        width: 55.06458535153346;
+        height: 55.06458535153346;
+        top: 491.02px;
+        left: 309.75px;
+        opacity: 0.8;
+    }
 }

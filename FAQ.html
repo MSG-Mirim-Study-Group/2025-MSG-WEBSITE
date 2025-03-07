@@ -4,31 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=0;"/>
     <title>FAQ</title>
-    <link rel="stylesheet" href="/FAQ.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/FAQ.css">
 </head>
 
 <body>
-    <!-- 헤더 -->
+    <!-- header -->
     <header>
-        <div class="logo">
-            <img src="/images/logo.png" alt="Logo" width="48.69px">
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#">MSG 소개</a></li>
-                <li><a href="#">프로젝트</a></li>
-                <li><a href="#">활동</a></li>
-                <li><a href="#">부원</a></li>
-                <li><a href="/FAQ.html" class="highlight">FAQ</a></li>
-            </ul>
-            <ul>
+        <img src="./image/logo.svg" class="header-logo" alt="로고">
 
+        <button class="menu-toggle">
+            <img src="./image/header-button.svg" class="toggle">
+        </button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="./MSG.html" class="header-menu">MSG 소개</a>
+                    <a href="./project.html" class="header-menu">프로젝트</a>
+                    <a href="./activity.html" class="header-menu">활동</a>
+                    <a href="./member.html" class="header-menu">부원</a>
+                    <a href="./FAQ.html" class="header-menu">FAQ</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- 메인 -->
+    <!-- 메뉴 페이지 -->
+    <div class="menu-page">
+        <div class="menu-header">
+            <img src="./image/logo.svg" alt="로고">
+        </div>
+        
+        <div class="menu-content">
+            <a href="./MSG.html" class="menu-item">MSG 소개</a>
+            <a href="./project.html" class="menu-item">프로젝트</a>
+            <a href="./activity.html" class="menu-item">활동</a>
+            <a href="./member.html" class="menu-item">부원</a>
+            <a href="./FAQ.html" class="menu-item">FAQ</a>
+        </div>
+        
+        <div class="menu-footer">
+            <div class="support-link">
+                <img src="./image/logo.svg" alt="logo">
+                <p>지원하러 가기</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating">
+        <img src="./image/logo.svg" alt="logo" class="floating-logo">
+        <p>지원하러 가기</p>
+    </div>
+
+    <!-- 메인 화면 -->
     <main>
         <div>
             <h1>F A Q</h1>
@@ -49,73 +82,81 @@
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">Q. 동아리 분위기는 어떤가요?</button>
+                <button class="faq-question"><span>Q. </span>동아리 분위기는 어떤가요?</button>
+                <div class="faq-answer">
+                    <div class="faq-answer-A">
+                        <p>A.</p>
+                    </div>
+                    <p>MSG(Make Share Gather)는 "<span>만들고, 공유하고, 모이다</span>" 라는 슬로건을 가진 미림의 전공 동아리로,<br>
+                        열정 있는 사람들이 모여 함께 성장하는 공간입니다.<br>
+                        MSG는 디자인과 개발과의 협업을 통해 전공 실력을 키울 수 있는 기회를 제공합니다.<br>
+                        <strong>협업 프로젝트, 공모전 참가, 전공 스터디 모임, IT 쇼케이스</strong> 등 다양한 경험 속에서<br>
+                        서로의 열정을 자극하며 더 나은 결과물을 만들어갑니다.<br>
+                        만들고 공유하며 모이는 과정 속에서 진로를 향한 열정과 협업의 즐거움을 모두 경험하세요!
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">Q. 전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</button>
+                <button class="faq-question"><span>Q. </span>전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</button>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">Q. 정기 모임은 언제, 어디서 하나요?</button>
+                <button class="faq-question"><span>Q. </span>정기 모임은 언제, 어디서 하나요?</button>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">Q. 전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</button>
+                <button class="faq-question"><span>Q. </span>전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</button>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">Q. 동아리 선배들과의 교류는 활발한가요?</button>
+                <button class="faq-question"><span>Q. </span>동아리 선배들과의 교류는 활발한가요?</button>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">Q. 신입 회원 모집은 언제, 어떻게 이루어지나요?</button>
+                <button class="faq-question"><span>Q. </span>신입 회원 모집은 언제, 어떻게 이루어지나요?</button>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question-last">Q. MSG 동아리만의 강점이나 차별화된 특징은 무엇인가요?</button>
+                <button class="faq-question-last"><span>Q. </span>MSG 동아리만의 강점이나 차별화된 특징은 무엇인가요?</button>
             </div>
-
         </div>
+
+        <div class="background background-circle1"></div>
+        <div class="background background-circle2"></div>
+        <div class="background background-circle3"></div>
+        <div class="background background-circle4"></div>
     </main>
 
-    <div class="background background-circle1"></div>
-    <div class="background background-circle2"></div>
-    <div class="background background-circle3"></div>
-    <div class="background background-circle4"></div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li>
+                    <a href="./MSG.html" class="footer-menu-item">MSG 소개</a>
+                    <a href="./project.html" class="footer-menu-item">프로젝트</a>
+                    <a href="./activity.html" class="footer-menu-item">활동</a>
+                    <a href="./member.html" class="footer-menu-item">부원</a>
+                    <a href="./FAQ.html" class="footer-menu-item">F A Q</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-connect">
+            <a class="president" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a>010-0000-0000
+            <br>
+            <a class="president" href="https://www.instagram.com/hy_____120/">15기 부장 이상연</a>010-0000-0000
+        </div>
+        <div class="footer-instagram">
+            <img src="../image/instagram.svg" alt="인스타그램">
+            <a href="https://www.instagram.com/mirim_msg/">@mirim_msg</a>
+        </div>
+        <div class="footer-copyright">
+            COPYRIGHT ⓒ MSG. ALL RIGHTS RESERVED
+        </div>
+    </footer>
 
-    <script src="/FAQ.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/FAQ.js"></script>
 </body>
-
-<!-- 푸터 -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-links">
-            <p><a href="#"><span>MSG 소개</span></a></p>
-            <p><a href="#">프로젝트</a></p>
-            <p><a href="#">활동</a></p>
-            <p><a href="#">부원</a></p>
-            <p><a href="/FAQ.html">F A Q</a></p>
-        </div>
-
-        <div class="footer-contact">
-            <p>14기 부장 장하영 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp; | &thinsp; 010-****-****</p>
-            <p>14기 부부장 양혜원 &nbsp;&nbsp;&nbsp; | &thinsp; 010-****-****</p>
-        </div>
-
-        <div class="footer-social">
-            <a href="https://www.instagram.com/mirim_msg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank">
-                <img src="/images/instagram.png" alt="Instagram">
-                <p>@mirim_msg</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>COPYRIGHT © MSG. ALL RIGHTS RESERVED</p>
-    </div>
-</footer>
-
 </html>
