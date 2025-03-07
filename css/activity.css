@@ -23,6 +23,101 @@
     margin-bottom: 10vh;
 }
 
+
+.Make {
+    font-family: 'KBO-Dia-Gothic';
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    background-color: #59F9CD;
+    color: white;
+    border-radius: 120vh;
+    margin-top: 30vh;
+    margin-left: 5vh;
+    text-align: center;
+    line-height: 30vh;
+    font-weight: 500;
+}
+
+.Share {
+    font-family: 'KBO-Dia-Gothic';
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    -webkit-text-stroke: 0.5px #88FFA9;
+    color: white;
+    border-radius: 120vh;
+    margin-left: 55vh;
+    text-align: center;
+    line-height: 30vh;
+    border-style: solid;
+    border-width: 0.1vh;
+    border-color:#88FFA9;
+}
+
+.gather-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Gather {
+    font-family: 'KBO-Dia-Gothic';
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    border-radius: 120vh;
+    text-align: center;
+    line-height: 30vh;
+    border-style: solid;
+    margin-left: 7vh;
+}
+
+.arrow {
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    border-radius: 120vh;
+    text-align: center;
+    line-height: 250px;
+    border-style: solid;
+    margin-left: 50px;
+}
+
+.arrow-filled {
+    width: 50vh;
+    height: 30vh;
+    font-size: 10vh;
+    border-radius: 120vh;
+    text-align: center;
+    line-height: 30vh;
+    border-style: solid;
+    margin-left: 50vh;
+}
+
+.Gather {
+    color: #88FFA9;
+    border: 0.1vh solid #88FFA9;
+}
+
+.arrow {
+    font-size: 100px;
+    color: #59F9CD;
+    border: 0.1vh solid #59F9CD;
+}
+
+.arrow-left {
+    transform: rotate(-20deg);
+}
+
+.arrow-filled {
+    font-size: 10vh;
+    color: white;
+    background-color: #59F9CD;
+    border: 0.1vh solid #59F9CD;
+}
+
+
 /* 활동 섹션 */
 .activity-section {
     margin-top: 60vh;
