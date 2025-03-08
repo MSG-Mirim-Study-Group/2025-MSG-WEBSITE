@@ -124,9 +124,13 @@
     }
 
     .content-desc { margin: 5vh 0; }
+    .content-desc h2 {
+        line-height: 3vh;
+    }
     .content-desc p {
         font-size: 3vw;
         margin: 1vh 0;
+        line-height: 2.5vh;
     }
 
     .content-passion { 
