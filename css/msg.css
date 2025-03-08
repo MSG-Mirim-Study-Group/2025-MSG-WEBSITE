@@ -59,10 +59,14 @@
 }
 
 .content-desc { margin: 10vh 0; }
+.content-desc h2 {
+    line-height: 6vh;
+}
 .content-desc p {
     font-size: 1vw;
     color: var(--gray-color-02);
     margin: 3vh 0;
+    line-height: 3.5vh;
 }
 
 .content-passion { margin-top: 19vh; }
