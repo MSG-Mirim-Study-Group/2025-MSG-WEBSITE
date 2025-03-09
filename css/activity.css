@@ -185,7 +185,7 @@
 
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .main {
         padding: 0 var(--mobile-padding);
     }

@@ -100,6 +100,7 @@
     color: var(--black-color-01);
 }
 
+/* 반응형 디자인 */
 @media screen and (max-width: 768px) {
     .content-banner { height: 48vw; }
     @keyframes floating {

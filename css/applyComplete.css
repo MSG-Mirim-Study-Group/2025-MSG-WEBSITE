@@ -1,6 +1,6 @@
 body {
     background-image: url('../image/apply/deco-circle-01.svg'), url('../image/apply/deco-circle-02.svg'), url('../image/apply/deco-circle-03.svg'), url('../image/apply/deco-circle-04.svg');
-    background-position: top -10vh left -8vh, top 45vh left 40vh, top 60vh right 40vh, top 25vh right -2vh;
+    background-position: top -25vh left -25vh, top 45vh left 40vh, top 60vh right 40vh, top 25vh right -2vh;
     background-size: auto, 12%, 10%, 10%;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     padding: 0;
@@ -61,9 +61,9 @@ body::after {
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
-        background-position: top -10vh left -8vh, top 50vh left 40vh, top 70vh right 40vh, top 25vh right -2vh;
+        background-position: top -30vh left -30vh, top 50vh left 40vh, top 60vh right 40vh, top 25vh right -2vh;
         background-size: auto, 15%, 30%, 20%;
     }
 

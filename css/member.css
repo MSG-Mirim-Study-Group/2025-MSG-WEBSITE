@@ -68,7 +68,7 @@ body {
 .member:nth-child(13) { transform: translate(18vw, 28vw); }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     background-image: url("../image/member/deco-circles-1.svg");
     background-size: 180%;
