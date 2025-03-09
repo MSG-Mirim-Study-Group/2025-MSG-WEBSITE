@@ -28,6 +28,7 @@
 
     /* 기본 패딩 크기 */
     --basic-padding: 12.5vw;
+    --mobile-padding: 10vw
 }
 
 * {
@@ -60,7 +61,7 @@ header {
     justify-content: space-between;
     padding: 0 var(--basic-padding);
     background-color: #fff;
-    box-shadow: 0 2px rgba(117, 117, 117, 0.08);
+    box-shadow: 0 2px 3px rgba(117, 117, 117, 0.08);
     z-index: 55;
 }
 
@@ -187,7 +188,7 @@ footer {
 /* floating button */
 .floating {
     position: fixed;
-    top: 20vh;  right: 3%;
+    top: 20vh;  right: 12vh;
     border: 2px solid #fff;
     border-radius: 50px;
     box-shadow: 0 2px rgba(117, 117, 117, 0.08);

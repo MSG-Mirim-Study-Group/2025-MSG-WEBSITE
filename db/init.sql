@@ -10,5 +10,6 @@ CREATE TABLE IF NOT EXISTS msg_apply.apply_form (
     strengths TEXT NOT NULL,
     failure TEXT NOT NULL,
     definition TEXT NOT NULL,
+    question TEXT,
     createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
 );
