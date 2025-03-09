@@ -200,9 +200,7 @@ footer {
     padding: 2.3vh 1.2vw;
     z-index: 50;
 
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    animation: blink 1.5s infinite;
 }
 .floating-logo {
     width: 1.5vw;
@@ -212,6 +210,18 @@ footer {
     color: var(--main-color-01);
     font-size: 0.9vw;
     font-weight: 500;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* 태블릿 및 모바일 버전 */
