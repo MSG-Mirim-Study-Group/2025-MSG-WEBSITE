@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "experience"
     ];
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", async function (event) {
         let isValid = true;
 
         requiredFields.forEach((fieldId) => {
@@ -31,6 +31,39 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             event.preventDefault(); // 기본 폼 제출 방지
             window.location.href = "applyComplete.html"; // 성공 시 페이지 이동
+        }
+
+        const formData = {
+            name: document.getElementById("name").value,
+            studentId: document.getElementById("student-id").value,
+            tel: document.getElementById("phone").value,
+            email: document.getElementById("email").value,
+            purpose: document.getElementById("reason").value,
+            strengths: document.getElementById("strength").value,
+            failure: document.getElementById("experience").value,
+            definition: document.getElementById("self-introduction").value,
+            question: document.getElementById("expectation") ? document.getElementById("expectation").value : ""
+        };
+
+        try {
+            const response = await fetch("http://localhost:3000/home/apply", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert("지원서 제출 완료!");
+                window.location.href = "applyComplete.html"; // 성공 시 완료 페이지 이동
+            } else {
+                alert("오류 발생: " + result.message);
+            }
+        } catch (error) {
+            console.error("오류 발생:", error);
+            alert("서버 연결에 실패했습니다.");
         }
     });
 
