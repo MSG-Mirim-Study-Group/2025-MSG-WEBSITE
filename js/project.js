@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         },
     });
+    setTimeout(() => {
+        swiper.slideNext(500); // 0.5초 동안 부드럽게 넘김
+    }, 1);
 });
 
 const awards = [
