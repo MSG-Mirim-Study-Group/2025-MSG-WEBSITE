@@ -1,253 +1,134 @@
-/* 메인 */
-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    background-image: url('../image/apply/deco-circle-01.svg'), url('../image/apply/deco-circle-02.svg'), url('../image/apply/deco-circle-03.svg'), url('../image/apply/deco-circle-04.svg');
+    background-position: top 18vh left -3vh, top 140vh right 20vh, top 120vh left 20vh, top 70vh right -2vh;
+    background-size: 15%, 12%, 10%, 8%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
-div>h1 {
-    color: #424242;
-    width: 1189px;
-    height: 76px;
-    top: 199px;
-    left: 286px;
-    gap: 0px;
-    opacity: 0px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 90px;
-    /* 아래쪽 간격 조정 */
-    margin-left: 70px;
-    font-family: Pretendard;
-    font-size: 40px;
+.main {
+    padding: 0 var(--basic-padding);
+}
+
+.faq-box {
+    margin-bottom: 50vh;
+}
+
+.title {
+    color: var(--black-color-01);
+    font-size: 5vh;
     font-weight: 600;
-    line-height: 76.38px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    margin: 13vh 0;
 }
 
 .faq-item {
-    margin-bottom: 20px;
+    background: #EEEEEE;
+    border-radius: 16px;
+    margin: 2.5vh 0;
+    padding: 4vh 2vw;
 }
 
 .faq-question {
-    text-decoration-color: #BDBDBD;
-    width: 89%;
-    /*이거 줄이기기*/
-    margin: 0 auto;
-    display: block;
-    align-items: center;
-    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
     border: none;
-    padding: 30px;
-    /*두께...*/
-    text-align: left;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 16px;
-    outline: none;
 }
-
-.faq-question::after {
-    content: url(/2025-MSG-WEBSITE/image/project/toggle.png);
-    position: absolute;
-    right: 250px;
+.faq-question span {
+    color: var(--black-color-01);
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+.faq-question .arrow img {
+    width: 1.3vw;
     transition: transform 0.3s ease;
 }
-
-.faq-question.active::after {
+/* 토글 열렸을 때 */
+.faq-item.open .arrow img {
     transform: rotate(180deg);
 }
 
-.faq-question span {
-    color: #757575;
-    word-spacing: 5px;
+.capital {
+    color: var(--gray-color-01) !important;
+    font-size: 2.8vh !important;
+    font-weight: 500 !important;
+    margin-right: 0.5vw;
 }
 
 .faq-answer {
-    width: 86.60%;
-    margin: 0 auto;
-    font-size: 16px;
-    background: #EEEEEE;
-    padding: 20px 15px;
-    margin-top: -25px;
-    justify-content: center;
-    line-height: 30px;
-    border-radius: 16px;
     display: none;
-    /* 기본적으로 숨김 */
-    transition: all 0.3s ease-in-out;
+    padding: 1vw;
+    padding-bottom: 0;
 }
-
-.faq-answer-A>p {
-    color: #757575;
-    text-align: left;
-    margin-left: 40px;
+/* 토글 열렸을 때 */
+.faq-item.open .faq-answer {
+    display: flex;
+    align-items: flex-start;
 }
-
-.faq-answer>p {
-    color: #424242;
-    text-align: left;
-    margin-top: -51px;
-    margin-left: 70px;
+.faq-answer p {
+    color: var(--black-color-01);
+    font-size: 2.5vh;
+    line-height: 3.6vh;
 }
-
-.faq-answer span {
-    font-family: Pretendard Variable;
-    color: #1BF48B;
+.highlight {
+    background-color: var(--main-color-01);
     font-weight: 600;
-    line-height: 38.4px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+}
+strong {
+    font-weight: 600;
 }
 
-.faq-question-last {
-    text-decoration-color: #BDBDBD;
-    width: 89%;
-    margin: 0 auto;
-    display: block;
-    align-items: center;
-    background-color: #EEEEEE;
-    border: none;
-    padding: 30px;
-    text-align: left;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 16px;
-    outline: none;
-    margin-bottom: 500px;
+.mobile-br {
+    display: none;
 }
 
-.faq-question-last::after {
-    content: url(/2025-MSG-WEBSITE/image/project/toggle.png);
-    position: absolute;
-    right: 250px;
-    transition: transform 0.3s ease;
-}
 
-.faq-question.active::after {
-    transform: rotate(180deg);
-}
-
-.faq-question-last span {
-    color: #757575;
-    word-spacing: 5px;
-}
-
-.background {
-    width: 100%;
-    position: absolute;
-    /* 화면에서 원하는 위치 배치 가능 */
-    background-size: contain;
-    /* 원래 크기 유지 */
-    background-repeat: no-repeat;
-    z-index: -1;
-    /* FAQ 텍스트보다 뒤로 보내기 */
-}
-
-/* 첫 번째 원 (왼쪽 상단) */
-.background-circle1 {
-    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-01.png');
-    width: 400px;
-    height: 400px;
-    top: 250px;
-    left: 0px;
-}
-
-/* 두 번째 원 (오른쪽 중간) */
-.background-circle2 {
-    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-02.png');
-    width: 240px;
-    height: 240px;
-    top: 600px;
-    right: -85px;
-}
-
-/* 세 번째 원 (왼쪽 하단) */
-.background-circle3 {
-    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-03.png');
-    width: 240px;
-    height: 240px;
-    bottom: -520px;
-    left: 50px;
-}
-
-/* 네 번째 원 (오른쪽 하단) */
-.background-circle4 {
-    background-image: url('/2025-MSG-WEBSITE/image/project/deco-circle-04.png');
-    width: 240px;
-    height: 240px;
-    bottom: -680px;
-    right: 70px;
-}
-
-/* 태블릿 및 모바일 버전 */
+/* 반응형 디자인 */
 @media screen and (max-width: 768px) {
-    div>h1 {
-        width: 272.79913330078125;
-        height: 18;
-        top: 100px;
-        left: 33.74px;
+    body {
+        background-position: top 18vh left -3vh, top 140vh right 20vh, top 120vh left 20vh, top 70vh right -2vh;
+        background-size: 30%, 20%, 15%, 20%;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    }
+    .main {
+        padding: 0 var(--mobile-padding);
+    }
+    .faq-box {
+        margin-bottom: 20vh;
+    }
+    
+    .title {
+        font-size: 3.5vh;
         font-weight: 600;
-        font-size: 14.68px;
+        margin: 7vh 0;
     }
-
+    
     .faq-item {
-        width: 310px;
+        padding: 2.8vh 6vw;
     }
-
-    .faq-question {
-        width: 310;
-        height: 25.94814682006836;
-        top: 262.5px;
-        left: 33.38px;
+    .faq-question span {
+        font-size: 1.8vh;
     }
-
+    .faq-question .arrow img {
+        display: none;
+    }
+    
+    .capital {
+        font-size: 2.3vh !important;
+        margin-right: 1.2vw;
+    }
+    
     .faq-answer {
-        width: 310;
-        font-size: 8px;
+        padding: 0;
+        padding-top: 1vh;
+    }
+    .faq-answer p {
+        font-size: 1.8vh;
+        line-height: 3.3vh;
     }
 
-    /* 첫 번째 원 (왼쪽 상단) */
-    .background-circle1 {
-        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-05.png);
-        width: 110.01532488053428;
-        height: 110.01532488053428;
-        top: 168.49px;
-        left: -78px;
-        opacity: 0.8;
+    .pc-br {
+        display: none;
     }
-
-    /* 두 번째 원 (오른쪽 중간) */
-    .background-circle2 {
-        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-06.png);
-        width: 55.06458535153346;
-        height: 55.06458535153346;
-        top: 339.36px;
-        left: 358.62px;
-        opacity: 0.8;
-    }
-
-    /* 세 번째 원 (왼쪽 하단) */
-    .background-circle3 {
-        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-07.png);
-        width: 45.450715480076035;
-        height: 41.11713951089666;
-        top: 418.41px;
-        left: 11.29px;
-    }
-
-    /* 네 번째 원 (오른쪽 하단) */
-    .background-circle4 {
-        background-image: url(/2025-MSG-WEBSITE/image/project/deco-circle-08.png);
-        width: 55.06458535153346;
-        height: 55.06458535153346;
-        top: 491.02px;
-        left: 309.75px;
-        opacity: 0.8;
+    .mobile-br {
+        display: inline;
     }
 }
