@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const response = await fetch("http://localhost:3000/home/apply", {
+            const response = await fetch("http://43.201.179.218/apply", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
