@@ -72,6 +72,7 @@
 .slogan {
     width: 100%;
     margin: 8vh 0;
+    content: url("../image/msg/content-slogan.svg");
 }
 
 .floating-slogan-logo {
@@ -157,6 +158,20 @@
     .content-about { margin: 10vw 0; }
     .content-about h2, h3 { font-size: 1em; }
     .arrow { left: 50vw; }
+    @keyframes floating-arrow {
+        0% {
+            top: 0;
+            left: 53vw;
+        }
+        50% {
+            top: 1vh;
+            left: 52vw;
+        }
+        100% {
+            top: 0;
+            left: 53vw;
+        }
+    }
 
     .content-slogan h1 {
         font-size: 1.5em;
@@ -166,6 +181,10 @@
     .slogan {
         margin: 0;
         margin-bottom: 3vh; 
+        content: url("../image/msg/content-slogan-mobile.png");
+    }
+    .floating-slogan-logo {
+        display: none;
     }
 
     .content-desc { margin: 5vh 0; }
