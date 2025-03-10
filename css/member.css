@@ -33,6 +33,22 @@ body {
   text-align: center;
   margin-top: 45vw;
   margin-bottom: 20vw;
+
+  opacity: 0; /* 처음에는 보이지 않음 */
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+
+  animation: flicker 1.5s infinite alternate; /* 반짝이는 효과 */
+}
+@keyframes flicker {
+  0% { opacity: 0.5; text-shadow: none; }
+  50% { opacity: 1; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+  100% { opacity: 0.5; text-shadow: none; }
+}
+/* 스크롤 시 애니메이션 적용 */
+#sixteen.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #sixteen .thenext {
@@ -43,6 +59,17 @@ body {
   position: relative;
   width: 100%;
   height: auto;
+}
+
+.member {
+  opacity: 0;
+  transform: translateY(5vh); /* 아래에서 위로 올라오는 효과 */
+  transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+.member.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* data-width 속성을 사용한 이미지 크기 조정 */

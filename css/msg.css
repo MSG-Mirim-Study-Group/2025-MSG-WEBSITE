@@ -42,6 +42,22 @@
     position: relative;
     width: 7vw;
     left: 45vw;
+
+    animation: floating-arrow 2s ease-in-out infinite;
+}
+@keyframes floating-arrow {
+    0% {
+        top: 0;
+        left: 48vw;
+    }
+    50% {
+        top: 1.5vh;
+        left: 47vw;
+    }
+    100% {
+        top: 0;
+        left: 48vw;
+    }
 }
 
 .content-slogan { text-align: center; }
@@ -57,6 +73,34 @@
     width: 100%;
     margin: 8vh 0;
 }
+
+.floating-slogan-logo {
+    position: absolute;
+    top: 280vh;     left: 40vw;
+    width: 11vw;
+    animation: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+@keyframes floatZigZag {
+    0% {
+        top: 270vh;
+        left: 38vw;
+    }
+    50% {
+        top: 300vh;
+        left: 48vw;
+    }
+    100% {
+        top: 320vh;
+        left: 40vw;
+    }
+}
+.floating-slogan-logo.active {
+    animation: floatZigZag 4s ease-in-out forwards;
+    opacity: 1;
+}
+
 
 .content-desc { margin: 10vh 0; }
 .content-desc h2 {
@@ -94,7 +138,7 @@
     font-weight: 600;
     color: var(--gray-color-01);
 }
-.title, .num {
+.msg-title, .num {
     font-size: 4vw;
     font-weight: 600;
     color: var(--black-color-01);

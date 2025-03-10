@@ -110,7 +110,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-.title {
+.act-title {
     color: var(--main-color-01);
     font-size: 5vh;
     font-weight: 500;
@@ -240,7 +240,7 @@
         left: 4vw;
         gap: 1px;
     }
-    .title {
+    .act-title {
         font-size: 3vh;
     }
     .description {
