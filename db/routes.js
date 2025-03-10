@@ -2,6 +2,6 @@ const express = require('express');
 const { submitApplication } = require('./controller');
 const router = express.Router();
 
-router.post('/apply', submitApplication);
+router.post('/', submitApplication);
 
 module.exports = router;
