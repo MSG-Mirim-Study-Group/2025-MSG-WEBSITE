@@ -4,7 +4,7 @@
 }
 
 .project-title {
-    padding-left: 14.8438vw;
+    padding-left: 12.5vw;
     font-family: 'KBO-Dia-Gothic';
     font-weight: 500;
     font-size: 2.6vw;
@@ -75,7 +75,7 @@
 .swiper .swiper-pagination-bullet {
     background-color: var(--main-color-03);
     margin: 0 10px;
-  }
+}
 
 .swiper-button-prev, .swiper-button-next  {
     display: none !important;
@@ -107,8 +107,8 @@
 
 .award-container {
     margin: 40px auto;
-    padding-left: 14.8438vw;
-    padding-right: 14.8438vw;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
 }
 
 .reward-title {
@@ -214,6 +214,9 @@
 
     .reward-list td {
         font-size: 2.1vw;
+    }
+    .reward-list th, .reward-list td {
+        padding: 1.8vh;
     }
 
     .reward-list th:nth-child(2), 

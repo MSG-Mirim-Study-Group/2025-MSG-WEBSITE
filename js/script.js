@@ -1,23 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // 플로팅 버튼 관련 설정
-    const floatingBtn = document.querySelector(".floating");
-    const showAt = 500;
-    
-    // 스크롤 시 플로팅 버튼 표시/숨기기
-    function toggleFloatingButtonVisibility() {
-        if (window.scrollY > showAt) {
-            floatingBtn.style.opacity = "1";
-            floatingBtn.style.visibility = "visible";
-        } else {
-            floatingBtn.style.opacity = "0";
-            floatingBtn.style.visibility = "hidden";
-        }
-    }
-    
-    // 스크롤 이벤트 리스너
-    window.addEventListener("scroll", toggleFloatingButtonVisibility);
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     // 메뉴 관련 설정
     const menuToggle = document.querySelector('.menu-toggle');
@@ -65,6 +45,10 @@ function highlightCurrentPageFooterMenu() {
 
 function goToPage() {
     window.location.href = "./apply.html";
+}
+
+function navigateToPage() {
+    window.location.href = "./index.html";
 }
 
 // 페이지 메뉴 항목 하이라이팅

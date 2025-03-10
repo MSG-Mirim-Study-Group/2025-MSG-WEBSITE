@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="user-scalable=0;"/>
+
     <title>FAQ</title>
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,7 +14,7 @@
 <body>
     <!-- header -->
     <header>
-        <img src="./image/logo.svg" class="header-logo" alt="로고">
+        <img src="./image/logo.svg" class="header-logo" alt="logo" onclick="navigateToPage()">
 
         <button class="menu-toggle">
             <img src="./image/header-button.svg" class="toggle">
@@ -23,7 +23,7 @@
         <nav class="nav-menu">
             <ul>
                 <li>
-                    <a href="./MSG.html" class="header-menu">MSG 소개</a>
+                    <a href="./index.html" class="header-menu">MSG 소개</a>
                     <a href="./project.html" class="header-menu">프로젝트</a>
                     <a href="./activity.html" class="header-menu">활동</a>
                     <a href="./member.html" class="header-menu">부원</a>
@@ -35,12 +35,12 @@
 
     <!-- 메뉴 페이지 -->
     <div class="menu-page">
-        <div class="menu-header">
+        <div class="menu-header" onclick="navigateToPage()">
             <img src="./image/logo.svg" alt="로고">
         </div>
         
         <div class="menu-content">
-            <a href="./MSG.html" class="menu-item">MSG 소개</a>
+            <a href="./index.html" class="menu-item">MSG 소개</a>
             <a href="./project.html" class="menu-item">프로젝트</a>
             <a href="./activity.html" class="menu-item">활동</a>
             <a href="./member.html" class="menu-item">부원</a>
@@ -56,76 +56,105 @@
     </div>
 
     <!-- 플로팅 버튼 -->
-    <div class="floating">
+    <div class="floating" onclick="goToPage()">
         <img src="./image/logo.svg" alt="logo" class="floating-logo">
         <p>지원하러 가기</p>
     </div>
 
     <!-- 메인 화면 -->
-    <main>
-        <div>
-            <h1>F A Q</h1>
+    <main class="main">
+        <div class="faq-box">
+            <h1 class="title">F A Q</h1>
+
             <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>MSG는 어떤 동아리인가요?</button>
+                <div class="faq-question">
+                    <span><span class="capital">Q.</span>MSG는 어떤 동아리인가요?</span>
+                    <span class="arrow"><img src="./image/toggle.svg" alt="arrow"></span>
+                </div>
                 <div class="faq-answer">
-                    <div class="faq-answer-A">
-                        <p>A.</p>
-                    </div>
-                    <p>MSG(Make Share Gather)는 "<span>만들고, 공유하고, 모이다</span>" 라는 슬로건을 가진 미림의 전공 동아리로,<br>
-                        열정 있는 사람들이 모여 함께 성장하는 공간입니다.<br>
-                        MSG는 디자인과 개발과의 협업을 통해 전공 실력을 키울 수 있는 기회를 제공합니다.<br>
-                        <strong>협업 프로젝트, 공모전 참가, 전공 스터디 모임, IT 쇼케이스</strong> 등 다양한 경험 속에서<br>
-                        서로의 열정을 자극하며 더 나은 결과물을 만들어갑니다.<br>
+                    <span class="capital">A.</span>
+                    <p> MSG(Make Share Gather)는 <span class="mobile-br"><br></span> <span class="highlight">" 만들고, 공유하고, 모이다 "</span> 라는 
+                        슬로건을 가진 미림의 전공 동아리로,<span class="pc-br"><br></span>
+                        열정 있는 사람들이 모여 함께 성장하는 공간입니다.<span class="mobile-br"><br></span>
+                        MSG는 디자인과 개발과의 협업을 통해 전공 실력을 키울 수 있는 기회를 제공합니다.<span class="pc-br"><br></span>
+                        <strong>협업 프로젝트, 공모전 참가, 전공 스터디 모임, IT 쇼케이스</strong> 등 다양한 경험 속에서
+                        서로의 열정을 자극하며 더 나은 결과물을 만들어갑니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
                         만들고 공유하며 모이는 과정 속에서 진로를 향한 열정과 협업의 즐거움을 모두 경험하세요!
                     </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>동아리 분위기는 어떤가요?</button>
+                <div class="faq-question">
+                    <span><span class="capital">Q.</span>MSG만의 차별화된 특징은 무엇인가요?</span>
+                    <span class="arrow"><img src="./image/toggle.svg" alt="arrow"></span>
+                </div>
                 <div class="faq-answer">
-                    <div class="faq-answer-A">
-                        <p>A.</p>
-                    </div>
-                    <p>MSG(Make Share Gather)는 "<span>만들고, 공유하고, 모이다</span>" 라는 슬로건을 가진 미림의 전공 동아리로,<br>
-                        열정 있는 사람들이 모여 함께 성장하는 공간입니다.<br>
-                        MSG는 디자인과 개발과의 협업을 통해 전공 실력을 키울 수 있는 기회를 제공합니다.<br>
-                        <strong>협업 프로젝트, 공모전 참가, 전공 스터디 모임, IT 쇼케이스</strong> 등 다양한 경험 속에서<br>
-                        서로의 열정을 자극하며 더 나은 결과물을 만들어갑니다.<br>
-                        만들고 공유하며 모이는 과정 속에서 진로를 향한 열정과 협업의 즐거움을 모두 경험하세요!
+                    <span class="capital">A.</span>
+                    <p> MSG는 모두가 적극적으로 참여하고 성장할 수 있는 환경이 마련되어 있습니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        특히, <strong>자체 웹사이트, 프로젝트, 공모전</strong> 등 동아리만의 특별한 활동을 중심으로 <span class="highlight">실질적인 경험</span>을 쌓을 수 있습니다!<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        함께 도전하며 의미 있는 결과물을 만들어가는 과정에서 큰 성취감을 느낄 수 있을 거예요!<span class="pc-br"><br></span>
                     </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</button>
+                <div class="faq-question">
+                    <span><span class="capital">Q.</span>모집은 언제, 어떻게 이루어지나요?</span>
+                    <span class="arrow"><img src="./image/toggle.svg" alt="arrow"></span>
+                </div>
+                <div class="faq-answer">
+                    <span class="capital">A.</span>
+                    <p> 3월 12일부터 <span class="highlight">18일 오후 11시 59분</span>까지! <span class="mobile-br"><br></span>MSG 지원 사이트를 통해 신입 회원을 모집합니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        이후 문자가 발송되면 면접을 거쳐 최종적으로 동아리 활동을 시작하게 됩니다! <span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        <strong>꼭 문자가 발송되어야 지원이 완료</strong>된 것이니 문자가 오지 않는다면 MSG 인스타그램으로 DM 보내주세요!!
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>정기 모임은 언제, 어디서 하나요?</button>
+                <div class="faq-question">
+                    <span><span class="capital">Q.</span>전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</span>
+                    <span class="arrow"><img src="./image/toggle.svg" alt="arrow"></span>
+                </div>
+                <div class="faq-answer">
+                    <span class="capital">A.</span>
+                    <p> 네! 실력이 부족해도 괜찮아요. <span class="mobile-br"><br></span><span class="highlight">함께 배우고 성장하는 과정</span>을 중요하게 생각합니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        동아리 활동을 하면서 자연스럽게 경험을 쌓고 실력을 키울 수 있도록 다양한 지원을 하고 있습니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        MSG에서 같이 <strong>프로젝트, 스터디, 주간코테</strong>를 통해 성장해 보아요!! o(≧∇≦o)
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>전공에 대한 지식과 실력이 없어도 지원할 수 있나요?</button>
+                <div class="faq-question">
+                    <span><span class="capital">Q.</span>동아리 분위기는 어떤가요?</span>
+                    <span class="arrow"><img src="./image/toggle.svg" alt="arrow"></span>
+                </div>
+                <div class="faq-answer">
+                    <span class="capital">A.</span>
+                    <p> 자유롭고 화목한 분위기 속에서 <span class="mobile-br"><br></span><span class="highlight">서로 도와가며 성장하는 문화</span>를 가지고 있습니다.<span class="pc-br"><br></span>
+                        실력보다는 <strong>열정과 도전하는 태도</strong>를 중요하게 생각하며, 부담 없이 함께 배우고 나누는 동아리입니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        한 해를 알차게 보내며 저희와 함께 배우고 도전할 분을 구합니다 ( ฅ˶˙ᴗ˙˶ ฅ ).ᐟ‪.ᐟ
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>동아리 선배들과의 교류는 활발한가요?</button>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question"><span>Q. </span>신입 회원 모집은 언제, 어떻게 이루어지나요?</button>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question-last"><span>Q. </span>MSG 동아리만의 강점이나 차별화된 특징은 무엇인가요?</button>
+                <div class="faq-question">
+                    <span><span class="capital">Q.</span>동아리 선배들과의 교류는 활발한가요?</span>
+                    <span class="arrow"><img src="./image/toggle.svg" alt="arrow"></span>
+                </div>
+                <div class="faq-answer">
+                    <span class="capital">A.</span>
+                    <p> 네! 선배들과의 소통이 활발한 편입니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        정기적으로 <strong>동아리 모임, 스터디, 회식 등 다양한 활동</strong>을 통해 자연스럽게 교류할 수 있습니다.<span class="pc-br"><br></span><span class="mobile-br"><br></span>
+                        동아리에 들어오면 <span class="highlight">공모전 꿀팁이나 글로벌 인턴십, 프로젝트에 대한 궁금한 모든 것들</span>을<span class="pc-br"><br></span>
+                        마구마구 알려드리니 MSG 지원하고 함께 즐거운 시간 보내요 (•̀ᴗ•́)و ̑̑♡٩
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="background background-circle1"></div>
-        <div class="background background-circle2"></div>
-        <div class="background background-circle3"></div>
-        <div class="background background-circle4"></div>
     </main>
 
     <!-- footer -->
@@ -133,7 +162,7 @@
         <div class="footer-menu">
             <ul>
                 <li>
-                    <a href="./MSG.html" class="footer-menu-item">MSG 소개</a>
+                    <a href="./index.html" class="footer-menu-item">MSG 소개</a>
                     <a href="./project.html" class="footer-menu-item">프로젝트</a>
                     <a href="./activity.html" class="footer-menu-item">활동</a>
                     <a href="./member.html" class="footer-menu-item">부원</a>

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-          },
+        },
         on: {
             slideChangeTransitionStart: function () {
                 document.querySelectorAll(".swiper-slide").forEach((slide) => {

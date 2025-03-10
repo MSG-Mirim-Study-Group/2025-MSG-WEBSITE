@@ -99,7 +99,7 @@ input[type="submit"] {
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         background-position: top 13vw right 5vh, top 150vh left -2vh;
     }
