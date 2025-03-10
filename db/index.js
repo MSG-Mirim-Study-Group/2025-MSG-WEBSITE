@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-app.use('/home', applyRoutes);
+app.use('/apply', applyRoutes);
 
 const runInitSQL = () => {
     const initSQLPath = path.join(__dirname, 'init.sql');
@@ -38,4 +38,6 @@ db.connect(err => {
     runInitSQL();
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log(`서버가 ${PORT}번 포트에서 실행 중`);
+});
