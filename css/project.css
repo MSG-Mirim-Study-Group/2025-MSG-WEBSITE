@@ -4,7 +4,7 @@
 }
 
 .project-title {
-    padding-left: 14.8438vw;
+    padding-left: 12.5vw;
     font-family: 'KBO-Dia-Gothic';
     font-weight: 500;
     font-size: 2.6vw;
@@ -75,7 +75,7 @@
 .swiper .swiper-pagination-bullet {
     background-color: var(--main-color-03);
     margin: 0 10px;
-  }
+}
 
 .swiper-button-prev, .swiper-button-next  {
     display: none !important;
@@ -93,11 +93,11 @@
 }
 
 .custom-button-prev {
-    left: 27%; /* 왼쪽 위치 조절 */
+    left: 27%; 
 }
 
 .custom-button-next {
-    right: 27%; /* 오른쪽 위치 조절 */
+    right: 27%;
 }
 
 .custom-button-prev img, .custom-button-next img {
@@ -106,9 +106,9 @@
 }
 
 .award-container {
-    margin: 40px auto; /* 중앙 정렬 */
-    padding-left: 14.8438vw; /* 왼쪽 패딩 */
-    padding-right: 14.8438vw;
+    margin: 40px auto;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
 }
 
 .reward-title {
@@ -146,9 +146,13 @@
 @media screen and (max-width: 768px) {
     
     .project-title {
-        font-size: 3vw;
+        font-size: 4vw;
+        padding-left: 8.8438vw;
     }
 
+    .reward-title {
+        font-size: 4vw;
+    }
     .swiper {
         margin-bottom: 10vh;
     }
@@ -174,9 +178,9 @@
     
     .custom-button-prev, .custom-button-next {
         position: absolute;
-        top: 35%;
-        width: 70px; /* 버튼 크기 조절 */
-        height: 40px;
+        top: 34%;
+        width: 60px; /* 버튼 크기 조절 */
+        height: 30px;
     }
 
     .custom-button-prev {
@@ -204,8 +208,15 @@
         padding-right: 8.8438vw;
     }
 
-    .reward-list th, .reward-list td {
+    .reward-list th {
+        font-size: 2.8vw;
+    }
+
+    .reward-list td {
         font-size: 2.1vw;
+    }
+    .reward-list th, .reward-list td {
+        padding: 1.8vh;
     }
 
     .reward-list th:nth-child(2), 
@@ -214,11 +225,12 @@
     }
 
     .reward-list th:nth-child(1), 
-.reward-list td:nth-child(1) {
-    padding-right: 10vw;
-}
-.swiper-slide-active {
-    z-index: 10; /* 가운데 이미지가 위로 올라오도록 설정 */
-}
+    .reward-list td:nth-child(1) {
+        padding-right: 10vw;
+    }
+    .swiper-slide-active {
+        z-index: 10;
+    }
+
 }
 

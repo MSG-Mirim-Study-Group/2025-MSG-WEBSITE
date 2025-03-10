@@ -38,3 +38,23 @@ $(document).ready(function () {
         }, interval);
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const floatingLogo = document.querySelector(".floating-slogan-logo");
+    let animationPlayed = false; // 애니메이션이 실행되었는지 확인하는 변수
+
+    function checkScroll() {
+        const rect = floatingLogo.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (!animationPlayed && rect.top < windowHeight && rect.bottom > 0) {
+            floatingLogo.classList.add("active"); // 화면에 보이면 애니메이션 실행
+            animationPlayed = true; // 한 번 실행되면 다시 실행되지 않도록 설정
+            window.removeEventListener("scroll", checkScroll); // 이벤트 리스너 제거
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // 페이지 로드 시 한 번 실행
+});
+

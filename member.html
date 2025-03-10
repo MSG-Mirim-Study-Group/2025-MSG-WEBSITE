@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Member</title>
+    <title>Make Share Gather MSG</title>
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/member.css">
@@ -13,7 +13,7 @@
 <body>
     <!-- header -->
     <header>
-        <img src="./image/logo.svg" class="header-logo" alt="로고">
+        <img src="./image/logo.svg" class="header-logo" alt="logo" onclick="navigateToPage()">
 
         <button class="menu-toggle">
             <img src="./image/header-button.svg" class="toggle">
@@ -22,7 +22,7 @@
         <nav class="nav-menu">
             <ul>
                 <li>
-                    <a href="./MSG.html" class="header-menu">MSG 소개</a>
+                    <a href="./index.html" class="header-menu">MSG 소개</a>
                     <a href="./project.html" class="header-menu">프로젝트</a>
                     <a href="./activity.html" class="header-menu">활동</a>
                     <a href="./member.html" class="header-menu">부원</a>
@@ -34,12 +34,12 @@
 
     <!-- 메뉴 페이지 -->
     <div class="menu-page">
-        <div class="menu-header">
+        <div class="menu-header" onclick="navigateToPage()">
             <img src="./image/logo.svg" alt="로고">
         </div>
         
         <div class="menu-content">
-            <a href="./MSG.html" class="menu-item">MSG 소개</a>
+            <a href="./index.html" class="menu-item">MSG 소개</a>
             <a href="./project.html" class="menu-item">프로젝트</a>
             <a href="./activity.html" class="menu-item">활동</a>
             <a href="./member.html" class="menu-item">부원</a>
@@ -55,7 +55,7 @@
     </div>
 
     <!-- 플로팅 버튼 -->
-    <div class="floating">
+    <div class="floating" onclick="goToPage()">
         <img src="./image/logo.svg" alt="logo" class="floating-logo">
         <p>지원하러 가기</p>
     </div>
@@ -128,7 +128,7 @@
         <div class="footer-menu">
             <ul>
                 <li>
-                    <a href="./MSG.html" class="footer-menu-item">MSG 소개</a>
+                    <a href="./index.html" class="footer-menu-item">MSG 소개</a>
                     <a href="./project.html" class="footer-menu-item">프로젝트</a>
                     <a href="./activity.html" class="footer-menu-item">활동</a>
                     <a href="./member.html" class="footer-menu-item">부원</a>
@@ -152,6 +152,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/member.js"></script>
 </body>
 
 </html>
