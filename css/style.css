@@ -23,7 +23,7 @@
     --page-height: calc(100vh - var(--header-height));
     
     /* 헤더 요소 크기 */
-    --header-logo-width: 5vh;
+    --header-logo-width: 4.5vh;
     --header-font-size: 2vh;
 
     /* 기본 패딩 크기 */
@@ -83,11 +83,11 @@ header ul>li>a:hover {
     background: none;
     border: none;
     cursor: pointer;
-    width: 5vh;
+    width: 4vh;
 }
 .toggle {
     display: block;
-    width: 5vh;
+    width: 4vh;
 }
 
 /* 메뉴 페이지 */
@@ -201,6 +201,8 @@ footer {
     z-index: 50;
 
     animation: blink 1.5s infinite;
+
+    cursor: pointer;
 }
 .floating-logo {
     width: 1.5vw;
