@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "reason",
         "self-introduction",
         "strength",
-        "experience"
+        "experience",
+        "expectation"
     ];
 
     form.addEventListener("submit", async function (event) {
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             strengths: document.getElementById("strength").value,
             failure: document.getElementById("experience").value,
             definition: document.getElementById("self-introduction").value,
-            question: document.getElementById("expectation") ? document.getElementById("expectation").value : ""
+            comment: document.getElementById("expectation").value
         };
 
         try {
