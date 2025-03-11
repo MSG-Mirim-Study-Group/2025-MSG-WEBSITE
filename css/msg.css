@@ -72,7 +72,6 @@
 .slogan {
     width: 100%;
     margin: 8vh 0;
-    content: url("../image/msg/content-slogan.svg");
 }
 
 .floating-slogan-logo {
@@ -181,7 +180,6 @@
     .slogan {
         margin: 0;
         margin-bottom: 3vh; 
-        content: url("../image/msg/content-slogan-mobile.png");
     }
     .floating-slogan-logo {
         display: none;
