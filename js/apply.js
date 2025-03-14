@@ -38,10 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isValid) {
             event.preventDefault(); // 유효성 검사 실패 시 제출 방지
-        } else {
-            event.preventDefault(); // 기본 폼 제출 방지
-            window.location.href = "applyComplete.html"; // 성공 시 페이지 이동
-        }
+            return;
+        } 
+        event.preventDefault();
+        // else {
+            // event.preventDefault(); // 기본 폼 제출 방지
+            // window.location.href = "applyComplete.html"; // 성공 시 페이지 이동
+        // }
 
         const formData = {
             name: document.getElementById("name").value,
