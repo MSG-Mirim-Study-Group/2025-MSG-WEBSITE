@@ -44,7 +44,15 @@ function highlightCurrentPageFooterMenu() {
 }
 
 function goToPage() {
-    window.location.href = "./apply.html";
+    const now = new Date(); 
+    const deadline = new Date(now.getFullYear(), now.getMonth(), 16, 23, 59, 59);
+    
+    if (now > deadline) {
+        alert("모집 기간이 종료되었습니다.");
+        return;
+    } else {
+        window.location.href = "./apply.html";
+    }
 }
 
 function navigateToPage() {
